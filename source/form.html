@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img src="page-header__image" alt="Изображение логотипа">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__image" src="#" alt="Изображение логотипа">
       </a>
       <button class="page-header__toogle visually-hidden"></button>
       <nav class="page-header__navigation">
@@ -24,7 +24,86 @@
         </ul>
       </nav>
     </header>
+    <main class="page-main">
+      <h1 class="page-main__header">Подбор программы</h1>
+      <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="page-main__form order-form" method="POST" action="https://echo.htmlacademy.ru">
+        <fieldset class="order-form__fieldset cat-info">
+          <div class="cat-info__container">
+            <label class="cat-info__label cat-info__label--name" for="cat-info__input-name">
+              Имя:*
+            </label>
+            <input id="cat-info__input-name" type="text" name="cat-name" placeholder="Барсик">
+            <label class="cat-info__label cat-info__label--weight" for="cat-info__input-weight">
+              Вес (кг):*
+            </label>
+            <input id="cat-info__input-weight" type="number" name="cat-weight" placeholder="7">
+            <label class="cat-info__label cat-info__label--age" for="cat-info__input-age">
+              Возраст (лет):
+            </label>
+            <input id="cat-info__input-age" type="number" name="cat-age" placeholder="7">
+          </div>
+        </fieldset>
+        <fieldset class="order-form__fieldset order-goal">
+          <label class="order-goal__label">
+            <input class="order-goal__input" type="radio" name="order-goal__radio" checked>
+            <span class="order-goal__span">Похудение</span>
+          </label>
+          <label class="order-goal__label">
+            <input class="order-goal__span" type="radio" name="order-goal__radio">
+            <span class="order-goal__span">Набор массы</span>
+          </label>
+          <label class="order-goal__label">
+            <input class="order-goal__span" type="radio" name="order-goal__radio">
+            <span class="order-goal__span">Не знаю (Нужен ваш совет)</span>
+          </label>
+        </fieldset>
+        <fieldset class="order-form__fieldset order-contscts">
+          <h2 class="order-contscts__header section-title">Контактные данные (владельца кота)</h2>
+          <label class="order-contscts__label" for="order-contscts__input-email">
+            E-mail:*
+          </label>
+          <input id="order-contscts__input-email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
+          <label class="order-contscts__label" for="order-contscts__input-phone">
+            Телефон:*
+          </label>
+          <input id="order-contscts__input-phone" type="tel" name="input-phone" placeholder="8 (960) 900-60-90">
+        </fieldset>
+        <fieldset class="order-form__fieldset order-comment">
+          <h2 class="order-comment__header section-title">Комментарий</h2>
+          <textarea class="order-comment__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="order-form__fieldset order-over">
+          <h2 class="order-over__header section-title">Дополнительно</h2>
+          <label class="order-over__label">
+            <input class="order-over__input" type="checkbox" name="sugar" checked>
+            <span class="order-over__span">Сахарозаменитель</span>
+          </label>
+          <label class="order-over__label">
+            <input class="order-over__input" type="checkbox" name="water">
+            <span class="order-over__span">Питьевая вода</span>
+          </label>
+          <label class="order-over__label">
+            <input class="order-over__input" type="checkbox" name="milk">
+            <span class="order-over__span">Молоко</span>
+          </label>
+          <label class="order-over__label">
+            <input class="order-over__input" type="checkbox" name="vitamins">
+            <span class="order-over__span">Витамины</span>
+          </label>
+        </fieldset>
+        <a class="order-form__link order-link" href="#">Отправить заявку</a>
+        <span class="order-form__required">
+          <sup>*</sup>— Обязательные поля
+        </span>
+      </form>
+    </main>
     <footer class="page-footer">
+      <section class="page-footer__cooperation cooperation--active cooperation--passive">
+        <b class="cooperation__tagline">приглашаем к сотрудничеству дилеров!</b>
+        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </section>
+      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616135686!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1561268887204!5m2!1sru!2sru" style="border:0" allowfullscreen=""></iframe>
       <a class="page-footer__logo-link" href="#">
         <img class="page-footer__logo-image" src="#" alt="Картинка логотипа">
       </a>
@@ -50,7 +129,7 @@
       <div class="page-footer__info info-block">
         <p class="info-block__paragraph">HTML Academy</p>
         <a class="info-block__link" href="#">
-          <img src="#">
+          <img class="info-block__image" src="#" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>

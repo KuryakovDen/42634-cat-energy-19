@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img src="page-header__image" alt="Изображение логотипа">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__image" src="#" alt="Изображение логотипа">
       </a>
       <button class="page-header__toogle visually-hidden"></button>
       <nav class="page-header__navigation">
@@ -25,7 +25,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="page-main__header">Функциональное питание для котов</h2>
+      <h1 class="page-main__header">Функциональное питание для котов</h1>
       <b class="page-main__tagline">Занялся собой? Займись котом!</b>
       <a class="page-main__select-program order-link" href="#">Подобрать программу</a>
       <section class="page-main__food-types food-categories">
@@ -63,8 +63,43 @@
           </li>
         </ul>
       </section>
+      <section class="page-main__example example">
+        <h2 class="example__header">Живой пример</h2>
+        <p class="example__description">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+          Отличный результат без изнуряющих тренировок!
+          При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="example__result">
+          <div class="example__item example__item--weight">
+            <p class="example__info">5 кг</p>
+          </div>
+          <div class="example__item example__item--days">
+            <p class="example__info">60 дней</p>
+          </div>
+        </div>
+        <p class="example__cost">Затраты на питание: 15 000 руб.</p>
+        <img class="example__img" src="#" alt="Картинка кота">
+        <div class="example__status">
+          <label class="example__label example__label--before">
+            Было
+          </label>
+          <div class="example__range">
+            <div class="example__scale"></div>
+          </div>
+          <button class="example__button" type="button"></button>
+          <label class="example__label example__label--after">
+            Стало
+          </label>
+        </div>
+      </section>
     </main>
     <footer class="page-footer">
+      <section class="page-footer__cooperation cooperation--active cooperation--passive">
+        <b class="cooperation__tagline">приглашаем к сотрудничеству дилеров!</b>
+        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </section>
+      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616135686!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1561268887204!5m2!1sru!2sru" style="border:0" allowfullscreen=""></iframe>
       <a class="page-footer__logo-link" href="#">
         <img class="page-footer__logo-image" src="#" alt="Картинка логотипа">
       </a>
@@ -90,7 +125,7 @@
       <div class="page-footer__info info-block">
         <p class="info-block__paragraph">HTML Academy</p>
         <a class="info-block__link" href="#">
-          <img src="#">
+          <img class="info-block__image" src="#" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>

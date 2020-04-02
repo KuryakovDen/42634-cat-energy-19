@@ -6,8 +6,8 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img src="page-header__image" alt="Изображение логотипа">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__image" src="#" alt="Изображение логотипа">
       </a>
       <button class="page-header__toogle visually-hidden"></button>
       <nav class="page-header__navigation">
@@ -25,7 +25,7 @@
       </nav>
     </header>
     <main class="page-main">
-      <h2 class="page-main__header page-main__header--catalog"></h2>
+      <h1 class="page-main__header page-main__header--catalog">Каталог продукции</h1>
       <section class="page-main__catalog catalog">
         <div class="catalog__card">
           <img class="catalog__image catalog__image--chicken500" src="#" alt="Картинка еды">
@@ -183,8 +183,61 @@
           <a class="catalog__link order-link order-link--all" href="#">Показать все</a>
         </div>
       </section>
+      <section class="page-main__over-products over-products">
+        <h2 class="over-products__header section-title">Дополнительные товары</h2>
+        <ul class="over-products__list">
+          <li class="over-products__item">
+            <h3 class="over-products__title">Сахарозаменитель</h3>
+            <table class="over-products__table">
+              <tr class="over-products__tr">
+                <td>1 упаковка (100 г)</td>
+                <td>200 Р.</td>
+              </tr>
+            </table>
+            <a class="over-products__link order-link" href="#">Заказать</a>
+          </li>
+          <li class="over-products__item">
+            <h3 class="over-products__title">Питьевая вода</h3>
+            <table class="over-products__table">
+              <tr class="over-products__tr">
+                <td>5 литров</td>
+                <td>50 Р.</td>
+              </tr>
+            </table>
+            <a class="over-products__link order-link" href="#">Заказать</a>
+          </li>
+          <li class="over-products__item">
+            <h3 class="over-products__title">Молоко</h3>
+            <table class="over-products__table">
+              <tr class="over-products__tr">
+                <td>1 литр</td>
+                <td>100 Р.</td>
+              </tr>
+            </table>
+            <a class="over-products__link order-link" href="#">Заказать</a>
+          </li>
+          <li class="over-products__item">
+            <h3 class="over-products__title">Витамины</h3>
+            <table class="over-products__table">
+              <tr class="over-products__tr">
+                <td>1 упаковка (30 г)</td>
+                <td>300 Р.</td>
+              </tr>
+            </table>
+            <a class="over-products__link order-link" href="#">Заказать</a>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main__present present">
+        <b class="present__text">Закажите все и получите чехол для кота в подарок!</b>
+      </section>
     </main>
     <footer class="page-footer">
+      <section class="page-footer__cooperation cooperation--active cooperation--passive">
+        <b class="cooperation__tagline">приглашаем к сотрудничеству дилеров!</b>
+        <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </section>
+      <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616135686!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1561268887204!5m2!1sru!2sru" style="border:0" allowfullscreen=""></iframe>
       <a class="page-footer__logo-link" href="#">
         <img class="page-footer__logo-image" src="#" alt="Картинка логотипа">
       </a>
@@ -210,7 +263,7 @@
       <div class="page-footer__info info-block">
         <p class="info-block__paragraph">HTML Academy</p>
         <a class="info-block__link" href="#">
-          <img src="#">
+          <img class="info-block__image" src="#" alt="Логотип HTML Academy">
         </a>
       </div>
     </footer>
