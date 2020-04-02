@@ -24,6 +24,47 @@
         </ul>
       </nav>
     </header>
+    <main class="page-main">
+      <h1 class="page-main__header">Подбор программы</h1>
+      <p class="page-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="page-main__form order-form" method="POST" action="https://echo.htmlacademy.ru">
+        <fieldset class="order-form__fieldset cat-info">
+          <div class="cat-info__container">
+            <label class="cat-info__label cat-info__label--name">
+              Имя:*
+            </label>
+            <input class="cat-info__input cat-info__input--name" type="text" name="cat-name" placeholder="Барсик">
+            <label class="cat-info__label cat-info__label--weight">
+              Вес (кг):*
+            </label>
+            <input class="cat-info__input cat-info__input--weight" type="number" name="cat-weight" placeholder="7">
+            <label class="cat-info__label cat-info__label--age">
+              Возраст (лет):
+            </label>
+            <input class="cat-info__input cat-info__input--age" type="number" name="cat-age" placeholder="7">
+          </div>
+        </fieldset>
+        <fieldset class="order-form__fieldset order-goal">
+
+        </fieldset>
+        <fieldset class="order-form__fieldset order-contscts">
+          <h2 class="order-contscts__header section-title">Контактные данные (владельца кота)</h2>
+
+        </fieldset>
+        <fieldset class="order-form__fieldset order-comment">
+          <h2 class="order-comment__header section-title">Комментарий</h2>
+          <textarea class="order-comment__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="order-form__fieldset order-over">
+          <h2 class="order-over__header section-title">Дополнительно</h2>
+
+        </fieldset>
+        <a class="order-form__link order-link" href="#">Отправить заявку</a>
+        <span class="order-form__required">
+          <sup>*</sup>— Обязательные поля
+        </span>
+      </form>
+    </main>
     <footer class="page-footer">
       <section class="page-footer__cooperation cooperation--active cooperation--passive">
         <b class="cooperation__tagline">приглашаем к сотрудничеству дилеров!</b>
