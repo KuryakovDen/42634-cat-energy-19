@@ -1,1 +1,17 @@
-// code
+.over-products__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.over-products__title {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: left;
+}
+
+.over-products__tr {
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  text-align: left;
+}

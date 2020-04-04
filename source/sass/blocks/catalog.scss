@@ -1,3 +1,24 @@
+.catalog__header {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.catalog__table {
+  display: flex;
+  width: 140px;
+  font-size: 12px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  line-height: 1.33;
+  text-align: right;
+}
+
+.catalog__link {
+  font-size: 16px;
+}
+
 .catalog__image {
   width: 140px;
   height: 145px;

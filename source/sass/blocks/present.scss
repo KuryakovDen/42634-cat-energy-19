@@ -1,0 +1,29 @@
+.present__text {
+  display: block;
+  width: 280px;
+  height: 290px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.25;
+  text-align: center;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 280px 290px;
+  margin-top: 40px;
+  padding-top: 190px;
+  position: relative;
+  color: white;
+
+  &::before {
+    width: 55px;
+    height: 60px;
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 110px;
+    top: 60px;
+  }
+}
