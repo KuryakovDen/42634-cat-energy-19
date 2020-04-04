@@ -2,3 +2,19 @@
   width: 190px;
   height: 40px;
 }
+
+.page-header__item {
+  list-style: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.page-header__link {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}

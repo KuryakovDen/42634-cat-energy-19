@@ -1,3 +1,16 @@
-.page-main {
-  background-color: hotpink;
+.page-main__header {
+  font-size: 36px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+.page-main__image {
+  width: 280px;
+  height: 270px;
+}
+
+.page-main__tagline {
+  text-transform: uppercase;
+  font-size: 14px;
 }
