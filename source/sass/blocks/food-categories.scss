@@ -8,11 +8,34 @@
   font-size: 24px;
   line-height: 1.54;
   text-align: left;
+  position: relative;
+  margin-left: 90px;
+
+  &--slim::before,
+  &--gain::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-color: #68b738;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    left: -70px;
+  }
+
+  &--gain::before {
+    background-image: url("../img/icon-cat-pro.svg");
+  }
 }
 
 .food-categories__text {
+  display: block;
   font-size: 14px;
   font-family: "Arial", "Helvetica", sans-serif;
+  line-height: 1.29;
+  margin-left: 20px;
 }
 
 .food-categories__link {
@@ -20,4 +43,5 @@
   color: black;
   text-transform: uppercase;
   font-size: 16px;
+  margin-left: 20px;
 }

@@ -1,3 +1,7 @@
+.howitworks__list {
+  padding: 0;
+}
+
 .howitworks__item {
   list-style: none;
   margin-bottom: 30px;
@@ -6,7 +10,7 @@
   text-align: left;
   font-size: 14px;
   position: relative;
-  margin-left: 50px;
+  margin-left: 77px;
 
   &--healthy::before,
   &--powder::before,
