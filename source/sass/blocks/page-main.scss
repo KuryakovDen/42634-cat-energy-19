@@ -3,11 +3,14 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   text-align: center;
-  color: white;
   line-height: 1;
   margin: 0;
   padding-top: 25px;
   margin-bottom: 32px;
+
+  &--inversion {
+    color: white;
+  }
 }
 
 .page-main__description {
