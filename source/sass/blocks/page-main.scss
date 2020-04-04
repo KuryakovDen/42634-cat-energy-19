@@ -3,14 +3,33 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   text-align: center;
+  color: white;
+  line-height: 1;
+  padding-top: 25px;
+  margin-bottom: 32px;
+}
+
+.page-main__description {
+  height: 305px;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 305px;
 }
 
 .page-main__image {
+  display: block;
   width: 280px;
   height: 270px;
+  margin: 0 auto;
+  margin-top: -135px;
 }
 
 .page-main__tagline {
+  display: block;
   text-transform: uppercase;
   font-size: 14px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  margin-top: -8px;
 }
