@@ -1,3 +1,16 @@
-body {
-  background: greenyellow;
-}
+@import 'blocks/catalog.scss';
+@import 'blocks/cat-info.scss';
+@import 'blocks/cooperation.scss';
+@import 'blocks/example.scss';
+@import 'blocks/food-categories.scss';
+@import 'blocks/howitworks.scss';
+@import 'blocks/info-block.scss';
+@import 'blocks/order-comment.scss';
+@import 'blocks/order-contacts.scss';
+@import 'blocks/order-form.scss';
+@import 'blocks/order-goal.scss';
+@import 'blocks/order-over.scss';
+@import 'blocks/over-products.scss';
+@import 'blocks/page-footer.scss';
+@import 'blocks/page-header.scss';
+@import 'blocks/page-main.scss';
