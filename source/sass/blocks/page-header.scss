@@ -1,0 +1,52 @@
+.page-header__logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header__logo {
+  display: block;
+}
+
+.page-header__image {
+  width: 190px;
+  min-height: 65px;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__toogle {
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-close.svg");
+  background-color: white;
+  border: none;
+  margin-left: 70px;
+}
+
+.page-header__navigation {
+  border-top: 1px solid #8080804d;
+}
+
+.page-header__list {
+  padding: 0;
+  margin: 0;
+  width: 320px;
+}
+
+.page-header__item {
+  list-style: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #8080804d;
+  padding: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.page-header__link {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}

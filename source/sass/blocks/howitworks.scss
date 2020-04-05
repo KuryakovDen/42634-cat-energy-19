@@ -1,0 +1,41 @@
+.howitworks__list {
+  padding: 0;
+}
+
+.howitworks__item {
+  list-style: none;
+  margin-bottom: 30px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  line-height: 1.29;
+  text-align: left;
+  font-size: 14px;
+  position: relative;
+  margin-left: 77px;
+
+  &--healthy::before,
+  &--powder::before,
+  &--cutlery::before,
+  &--time::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: #68b738;
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    left: -75px;
+  }
+
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--cutlery::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--time::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+}
