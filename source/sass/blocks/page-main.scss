@@ -11,6 +11,15 @@
   &--inversion {
     color: white;
   }
+
+  &--select {
+    margin: 0;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 35px;
+    text-align: left;
+  }
 }
 
 .page-main__description {
@@ -41,4 +50,15 @@
 .page-main__wrapper {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.page-main__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.page-main__present {
+  margin-bottom: 35px;
 }

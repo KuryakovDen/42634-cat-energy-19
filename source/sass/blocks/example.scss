@@ -1,3 +1,11 @@
+.example {
+  background-color: #f2f2f2;
+}
+
+.example__header {
+  padding-top: 35px;
+}
+
 .example__description {
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
@@ -9,4 +17,111 @@
   text-transform: uppercase;
   line-height: 1.43;
   text-align: center;
+  margin-top: 40px;
+}
+
+.example__result {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.example__status {
+  display: flex;
+  width: 320px;
+  position: relative;
+  margin-right: 20px;
+  padding-top: 35px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+.example__range {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 85px;
+  height: 15px;
+  border-radius: 6px;
+  border: solid 1px #cdcdcd;
+  background-color: white;
+}
+
+.example__button {
+  display: none;
+}
+
+.example__img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-left: -20px;
+}
+
+.example__scale {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #68b738;
+  margin-left: 5px;
+}
+
+.example__label {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.25;
+
+  &--before {
+    margin-right: 20px;
+  }
+
+  &--after {
+    margin-left: 20px;
+  }
+}
+
+.example__info {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.example__item {
+  position: relative;
+  width: 125px;
+  height: 55px;
+  border: 1px solid #cdcdcd;
+  font-size: 12px;
+  white-space: normal;
+}
+
+.example__item--weight {
+  &::before {
+    display: block;
+    width: 60px;
+    height: auto;
+    position: absolute;
+    content: "снижение веса";
+    top: 44px;
+    left: 30px;
+    white-space: wrap;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+}
+
+.example__item--days {
+  &::after {
+    display: block;
+    width: 60px;
+    height: auto;
+    position: absolute;
+    content: "затрачено времени";
+    top: 44px;
+    left: 30px;
+    white-space: wrap;
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
 }
