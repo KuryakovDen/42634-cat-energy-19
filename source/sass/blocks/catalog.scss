@@ -1,6 +1,14 @@
 .catalog__info {
   display: block;
+  min-height: 100px;
   width: 100%;
+}
+
+.catalog__tr {
+  display: flex;
+  justify-content: space-between;
+  width: 140px;
+  text-align: left;
 }
 
 .catalog__header {
