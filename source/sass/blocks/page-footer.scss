@@ -13,12 +13,16 @@
 .page-footer__list {
   width: 280px;
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
   padding-top: 25px;
   padding-bottom: 20px;
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .page-footer__item {

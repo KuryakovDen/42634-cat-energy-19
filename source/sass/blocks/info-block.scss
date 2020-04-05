@@ -2,7 +2,9 @@
   width: 280px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 0 auto;
+  min-height: 75px;
 }
 
 .info-block__paragraph {
