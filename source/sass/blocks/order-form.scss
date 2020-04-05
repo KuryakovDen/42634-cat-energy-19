@@ -1,1 +1,23 @@
-// code
+.order-form__fieldset {
+  border: none;
+}
+
+.order-form__text {
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: left;
+}
+
+.order-form__link {
+  margin-left: 20px;
+}
+
+.order-form__required {
+  display: block;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.14;
+  margin-top: 23px;
+  margin-bottom: 35px;
+}

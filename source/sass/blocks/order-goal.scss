@@ -1,1 +1,14 @@
-// code
+.order-goal {
+  display: flex;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+.order-goal__label {
+  display: block;
+  margin-bottom: 25px;
+
+  &:first-child {
+    margin-top: 25px;
+  }
+}

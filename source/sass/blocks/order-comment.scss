@@ -1,1 +1,17 @@
-// code
+.order-comment__textarea {
+  font-family: "Oswald", "Helvetica", sans-serif;
+  width: 280px;
+  height: 150px;
+  opacity: 0.5;
+  border: solid 1px #cdcdcd;
+  resize: none;
+  text-transform: uppercase;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: 16px;
+  padding-left: 16px;
+  padding-top: 15px;
+  box-sizing: border-box;
+  color: black;
+}

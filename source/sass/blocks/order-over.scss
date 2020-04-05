@@ -1,1 +1,12 @@
-// code
+.order-over {
+  display: flex;
+}
+
+.order-over__label {
+  display: block;
+  margin-bottom: 25px;
+
+  &:first-child {
+    margin-top: 25px;
+  }
+}

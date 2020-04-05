@@ -2,13 +2,19 @@
   display: block;
   width: 280px;
   height: 40px;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #68b738;
   color: white;
   text-align: center;
   line-height: 40px;
+  border: none;
+  font-family: "Oswald", "Helvetica", sans-serif;
+
+  &--small {
+    font-size: 14px;
+  }
 
   &--all {
     display: block;
