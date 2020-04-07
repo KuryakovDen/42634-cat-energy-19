@@ -1,9 +1,11 @@
 .cooperation {
   display: flex;
+  width: 320px;
   min-height: 115px;
   padding-left: 20px;
   padding-right: 25px;
   align-items: center;
+  box-sizing: border-box;
 
   &--active {
     background-color: white;
