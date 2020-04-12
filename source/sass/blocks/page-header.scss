@@ -58,10 +58,11 @@
   color: black;
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) {
   .page-header {
     width: 100%;
     display: flex;
+    justify-content: space-between;
     min-height: 60px;
     white-space: nowrap;
   }
@@ -69,7 +70,7 @@
   .page-header__list,
   .page-header__navigation {
     display: flex;
-    min-width: 450px;
+    min-width: 550px;
     border: none;
   }
 
@@ -91,6 +92,6 @@
 
 @media (min-width: 1200px) {
   .page-header {
-    min-height: 700px;
+    width: 1200px;
   }
 }
