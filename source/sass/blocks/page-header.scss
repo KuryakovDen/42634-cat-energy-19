@@ -1,5 +1,6 @@
 .page-header {
   min-height: 65px;
+  box-sizing: border-box;
 }
 
 .page-header__logo-wrapper {
@@ -26,6 +27,7 @@
   height: 19px;
   background-image: url("../img/icon-close.svg");
   background-color: white;
+  background-repeat: no-repeat;
   border: none;
   margin-left: 70px;
   cursor: pointer;
@@ -67,6 +69,10 @@
     white-space: nowrap;
   }
 
+  .page-header__list {
+    margin-left: 90px;
+  }
+
   .page-header__list,
   .page-header__navigation {
     display: flex;
@@ -88,10 +94,33 @@
       border-bottom: 2px solid #68b738;
     }
   }
+
+  .page-header__image {
+    width: 175px;
+    height: 60px;
+  }
 }
 
 @media (min-width: 1200px) {
   .page-header {
     width: 1200px;
+  }
+
+  .page-header__navigation {
+    z-index: 2;
+  }
+
+  .page-header__link {
+    color: white;
+    font-weight: normal;
+
+    &:hover {
+      border-bottom: 2px solid white;
+    }
+  }
+
+  .page-header__image {
+    width: 203px;
+    height: 60px;
   }
 }

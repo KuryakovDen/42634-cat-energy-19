@@ -29,3 +29,28 @@
     margin-top: -50px;
   }
 }
+
+@media (min-width: 768px) {
+  .order-link {
+    &--small {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 245px;
+      height: 52px;
+      font-size: 20px;
+      position: absolute;
+      top: 400px;
+      left: 110px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .order-link {
+    &--small {
+      top: 390px;
+      left: 485px;
+    }
+  }
+}
