@@ -49,8 +49,9 @@
 @media (min-width: 1200px) {
   .order-link {
     &--small {
+      position: absolute;
       top: 390px;
-      left: 485px;
+      left: 205px;
     }
   }
 }

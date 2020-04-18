@@ -111,8 +111,15 @@
   }
 
   .page-header__link {
-    color: white;
     font-weight: normal;
+
+    &:hover {
+      border-bottom: 2px solid #68b738;
+    }
+  }
+
+  .page-header__link--menu {
+    color: white;
 
     &:hover {
       border-bottom: 2px solid white;

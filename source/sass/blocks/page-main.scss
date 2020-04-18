@@ -112,28 +112,29 @@
 @media (min-width: 1200px) {
   .page-main__image {
     z-index: 2;
-    margin-left: 220px;
     width: 552px;
     height: 500px;
+    padding: 0;
+    padding-top: 140px;
+    padding-left: 213px;
   }
 
   .page-main__description {
     position: absolute;
-    right: 200px;
+    right: 0;
     top: 0;
     width: 720px;
     height: 696px;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-size: 720px 696px;
-    z-index: 0;
+    z-index: -1;
   }
 
   .page-main__tagline {
     display: block;
     position: absolute;
     left: -500px;
-    margin-top: 300px;
   }
 
   .page-main__header {
