@@ -21,3 +21,21 @@
   margin-top: 23px;
   margin-bottom: 35px;
 }
+
+@media (min-width: 768px) {
+  .order-form__text {
+    font-size: 20px;
+  }
+
+  .order-form__container {
+    width: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .order-form__required {
+    font-size: 16px;
+  }
+}

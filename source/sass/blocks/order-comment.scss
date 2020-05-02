@@ -15,3 +15,14 @@
   box-sizing: border-box;
   color: black;
 }
+
+@media (min-width: 768px) {
+  .order-comment__textarea {
+    width: 630px;
+    height: 175px;
+  }
+
+  .cat-info__label {
+    font-size: 20px;
+  }
+}

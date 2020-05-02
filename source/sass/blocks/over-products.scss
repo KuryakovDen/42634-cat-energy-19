@@ -35,3 +35,47 @@
   margin-top: 50px;
   margin-left: 20px;
 }
+
+@media (min-width: 768px) {
+  .over-products,
+  .over-products__table {
+    width: 720px;
+  }
+
+  .over-products__table {
+    width: 250px;
+  }
+
+  .over-products__link {
+    width: 633px;
+    margin: auto;
+  }
+
+  .over-products__title {
+    font-size: 20px;
+    white-space: nowrap;
+    padding-left: 40px;
+  }
+
+  .over-products__tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  .over-products__item {
+    border-top: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+  }
+
+  .over-products__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 43px;
+    box-sizing: border-box;
+  }
+}

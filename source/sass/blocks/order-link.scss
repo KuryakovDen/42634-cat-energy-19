@@ -29,3 +29,46 @@
     margin-top: -50px;
   }
 }
+
+@media (min-width: 768px) {
+  .order-link {
+    width: 250px;
+
+    &--small {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 245px;
+      height: 52px;
+      font-size: 20px;
+      position: absolute;
+      top: 400px;
+      left: 110px;
+    }
+
+    &--catalog {
+      margin: auto;
+    }
+
+    &--all {
+      top: 449px;
+      position: absolute;
+    }
+
+    &--send {
+      width: 280px;
+      height: 50px;
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .order-link {
+    &--small {
+      position: absolute;
+      top: 390px;
+      left: 205px;
+    }
+  }
+}

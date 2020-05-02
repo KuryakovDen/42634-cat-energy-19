@@ -29,3 +29,14 @@
     width: 174px;
   }
 }
+
+@media (min-width: 768px) {
+  .cat-info__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cat-info__input {
+    opacity: 0.5;
+  }
+}

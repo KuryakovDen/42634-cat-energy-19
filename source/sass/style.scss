@@ -17,6 +17,7 @@
 @import "blocks/page-header.scss";
 @import "blocks/page-main.scss";
 @import "blocks/section-header.scss";
+@import "blocks/section-title.scss";
 @import "visually-hidden.scss";
 @import "mixins.scss";
 @import "variables.scss";
@@ -36,7 +37,14 @@
 }
 
 body {
-  width: 320px;
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
   font-family: "Oswald", "Arial", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

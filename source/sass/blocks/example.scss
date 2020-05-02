@@ -1,4 +1,5 @@
 .example {
+  width: 320px;
   background-color: #f2f2f2;
 }
 
@@ -123,5 +124,11 @@
     white-space: wrap;
     text-align: center;
     font-family: "Arial", sans-serif;
+  }
+}
+
+@media (min-width: 768px) {
+  .example {
+    width: 720px;
   }
 }

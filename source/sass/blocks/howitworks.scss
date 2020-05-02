@@ -1,4 +1,6 @@
 .howitworks__list {
+  display: block;
+  width: 320px;
   padding: 0;
 }
 
@@ -37,5 +39,70 @@
 
   &--time::before {
     background-image: url("../img/advantage-clock@1x.png");
+  }
+}
+
+@media (min-width: 768px) {
+  .howitworks__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 710px;
+  }
+
+  .howitworks__item {
+    font-size: 16px;
+    width: 200px;
+    min-height: 230px;
+    line-height: 1.5;
+    margin-right: 180px;
+    margin-bottom: 90px;
+    margin-left: 0;
+    box-sizing: border-box;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      left: 0;
+    }
+
+    &--healthy::after,
+    &--powder::after,
+    &--cutlery::after,
+    &--time::after {
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      color: #f2f2f2;
+      z-index: -1;
+      width: 70px;
+      height: 230px;
+      top: -110px;
+      right: 0;
+    }
+
+    &--healthy::after {
+      content: "1";
+    }
+
+    &--powder::after {
+      content: "2";
+    }
+
+    &--cutlery::after {
+      content: "3";
+    }
+
+    &--time::after {
+      content: "4";
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .howitworks__paragraph {
+    padding-top: 90px;
+    padding-left: 0;
   }
 }

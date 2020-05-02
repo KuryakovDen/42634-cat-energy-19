@@ -70,3 +70,131 @@
     margin-bottom: 30px;
   }
 }
+
+@media (min-width: 768px) {
+  .catalog {
+    width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .catalog__header {
+    width: 125px;
+    font-size: 20px;
+    text-align: center;
+
+    &--more {
+      width: 140px;
+    }
+  }
+
+  .catalog__card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+    width: 325px;
+    min-height: 430px;
+    box-sizing: border-box;
+
+    &--more {
+      background-color: white;
+      border-top: none;
+      border-bottom: none;
+      border: 1px solid #cdcdcd;
+      margin: 0;
+    }
+  }
+
+  .catalog__info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .catalog__image {
+    position: absolute;
+    bottom: 320px;
+
+    &--chicken500 {
+      width: 160px;
+      height: 172px;
+    }
+
+    &--chicken1000 {
+      width: 195px;
+      height: 208px;
+    }
+
+    &--fish500 {
+      width: 160px;
+      height: 174px;
+    }
+
+    &--fish1000 {
+      width: 195px;
+      height: 208px;
+    }
+
+    &--buckwheat500 {
+      width: 160px;
+      height: 170px;
+    }
+
+    &--buckwheat1000 {
+      width: 195px;
+      height: 208px;
+    }
+
+    &--rice500 {
+      width: 163px;
+      height: 174px;
+    }
+  }
+
+  .catalog__link {
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 40px;
+    left: 38px;
+    width: 250px;
+    box-sizing: border-box;
+  }
+
+  .catalog__wrapper {
+    position: relative;
+    margin-right: 60px;
+    margin-bottom: 140px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .catalog__table {
+    width: 250px;
+  }
+
+  .catalog__tr {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+  }
+
+  .catalog__header-tagline {
+    width: 175px;
+    font-size: 16px;
+    text-align: center;
+  }
+}
