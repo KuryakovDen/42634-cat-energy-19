@@ -32,6 +32,8 @@
 
 @media (min-width: 768px) {
   .order-link {
+    width: 250px;
+
     &--small {
       display: flex;
       align-items: center;
@@ -43,6 +45,10 @@
       top: 400px;
       left: 110px;
     }
+
+    &--catalog {
+      margin: auto;
+    }
   }
 }
 
@@ -52,6 +58,10 @@
       position: absolute;
       top: 390px;
       left: 205px;
+    }
+
+    &--all {
+      margin-bottom: 52px;
     }
   }
 }

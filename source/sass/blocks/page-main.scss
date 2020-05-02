@@ -81,6 +81,14 @@
   }
 
   .page-main__header {
+    font-size: 60px;
+
+    &--catalog {
+      white-space: nowrap;
+      margin-bottom: 160px;
+      padding: 0;
+    }
+
     &--inversion {
       color: black;
       text-align: left;
