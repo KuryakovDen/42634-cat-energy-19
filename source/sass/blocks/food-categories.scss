@@ -86,6 +86,7 @@
   .food-categories__header {
     font-size: 36px;
     margin-left: 55px;
+    font-weight: normal;
 
     &::after {
       width: 200px;
@@ -115,6 +116,8 @@
 
   .food-categories__text {
     width: 380px;
+    font-size: 16px;
+    line-height: 1.5;
     margin-left: 55px;
   }
 
@@ -125,5 +128,6 @@
   .food-categories__link {
     width: 120px;
     margin-left: 35px;
+    font-size: 20px;
   }
 }
