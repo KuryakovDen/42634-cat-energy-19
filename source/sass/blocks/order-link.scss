@@ -49,6 +49,11 @@
     &--catalog {
       margin: auto;
     }
+
+    &--all {
+      top: 449px;
+      position: absolute;
+    }
   }
 }
 
@@ -58,10 +63,6 @@
       position: absolute;
       top: 390px;
       left: 205px;
-    }
-
-    &--all {
-      margin-bottom: 52px;
     }
   }
 }
