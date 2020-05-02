@@ -41,3 +41,24 @@
   margin: 0 auto;
   margin-top: 40px;
 }
+
+@media (min-width: 768px) {
+  .page-footer,
+  .page-footer__list {
+    width: 720px;
+  }
+
+  .page-footer__list {
+    width: 250px;
+    border: none;
+  }
+
+  .page-footer__logo-image,
+  .page-footer__navigation {
+    margin: 0;
+  }
+
+  .page-footer__logo-image {
+    margin-right: 30px;
+  }
+}

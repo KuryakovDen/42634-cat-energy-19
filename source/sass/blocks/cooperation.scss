@@ -38,3 +38,38 @@
   height: 400px;
   position: relative;
 }
+
+@media (min-width: 768px) {
+  .cooperation {
+    min-height: 200px;
+    width: 720px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .cooperation__tagline {
+    width: 150px;
+    margin-left: 70px;
+    line-height: 1.25;
+    font-size: 20px;
+  }
+
+  .cooperation__address {
+    width: 165px;
+    text-align: right;
+    margin-right: 70px;
+    font-size: 16px;
+  }
+
+  .cooperation__map {
+    width: 720px;
+  }
+
+  .cooperation__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+  }
+}

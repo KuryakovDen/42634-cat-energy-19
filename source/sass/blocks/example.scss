@@ -126,3 +126,9 @@
     font-family: "Arial", sans-serif;
   }
 }
+
+@media (min-width: 768px) {
+  .example {
+    width: 720px;
+  }
+}
