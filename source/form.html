@@ -66,14 +66,16 @@
         </fieldset>
         <fieldset class="order-form__fieldset order-contacts">
           <h2 class="order-contacts__header section-title">Контактные данные (владельца кота)</h2>
-          <label class="order-contacts__label order-form__text" for="order-contacts__input-email">
-            E-mail:*
-          </label>
-          <input id="order-contacts__input-email" class="order-contacts__input order-contacts__input--email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
-          <label class="order-contacts__label order-form__text" for="order-contacts__input-phone">
-            Телефон:*
-          </label>
-          <input id="order-contacts__input-phone" class="order-contacts__input order-contacts__input--phone" type="tel" name="input-phone" placeholder="8 (960) 900-60-90">
+          <div class="order-contacts__wrapper">
+            <label class="order-contacts__label order-form__text" for="order-contacts__input-email">
+              E-mail:*
+            </label>
+            <input id="order-contacts__input-email" class="order-contacts__input order-contacts__input--email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
+            <label class="order-contacts__label order-form__text" for="order-contacts__input-phone">
+              Телефон:*
+            </label>
+            <input id="order-contacts__input-phone" class="order-contacts__input order-contacts__input--phone" type="tel" name="input-phone" placeholder="8 (960) 900-60-90">
+          </div>
         </fieldset>
         <fieldset class="order-form__fieldset order-comment">
           <h2 class="order-comment__header section-title">Комментарий</h2>
@@ -81,31 +83,35 @@
         </fieldset>
         <fieldset class="order-form__fieldset order-over">
           <h2 class="order-over__header section-title">Дополнительно</h2>
-          <label class="order-over__label">
-            <input class="order-over__input" type="checkbox" name="sugar" checked>
-            <span class="order-over__span order-form__text">Сахарозаменитель</span>
-          </label>
-          <label class="order-over__label">
-            <input class="order-over__input" type="checkbox" name="water">
-            <span class="order-over__span order-form__text">Питьевая вода</span>
-          </label>
-          <label class="order-over__label">
-            <input class="order-over__input" type="checkbox" name="milk">
-            <span class="order-over__span order-form__text">Молоко</span>
-          </label>
-          <label class="order-over__label">
-            <input class="order-over__input" type="checkbox" name="vitamins">
-            <span class="order-over__span order-form__text">Витамины</span>
-          </label>
+          <div class="order-over__wrapper">
+            <label class="order-over__label">
+              <input class="order-over__input" type="checkbox" name="sugar" checked>
+              <span class="order-over__span order-form__text">Сахарозаменитель</span>
+            </label>
+            <label class="order-over__label">
+              <input class="order-over__input" type="checkbox" name="water">
+              <span class="order-over__span order-form__text">Питьевая вода</span>
+            </label>
+            <label class="order-over__label">
+              <input class="order-over__input" type="checkbox" name="milk">
+              <span class="order-over__span order-form__text">Молоко</span>
+            </label>
+            <label class="order-over__label">
+              <input class="order-over__input" type="checkbox" name="vitamins">
+              <span class="order-over__span order-form__text">Витамины</span>
+            </label>
+          </div>
         </fieldset>
-        <button class="order-form__link order-link order-link--send" type="submit">Отправить заявку</button>
-        <span class="order-form__required">
-          <sup>*</sup>— Обязательные поля
-        </span>
+        <div class="order-form__container">
+          <button class="order-form__link order-link order-link--send" type="submit">Отправить заявку</button>
+          <span class="order-form__required">
+            <sup>*</sup>— Обязательные поля
+          </span>
+        </div>
       </form>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__cooperation cooperation cooperation--active">
+      <section class="page-footer__cooperation cooperation cooperation--passive">
         <b class="cooperation__tagline">приглашаем к сотрудничеству дилеров!</b>
         <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</address>
       </section>

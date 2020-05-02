@@ -28,3 +28,10 @@
 .order-contacts__header {
   line-height: 1;
 }
+
+@media (min-width: 768px) {
+  .order-contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}

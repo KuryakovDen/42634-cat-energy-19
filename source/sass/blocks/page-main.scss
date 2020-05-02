@@ -97,6 +97,10 @@
       position: absolute;
       left: 105px;
     }
+
+    &--select {
+      margin-bottom: 50px;
+    }
   }
 
   .page-main__tagline {
@@ -114,6 +118,13 @@
     height: 610px;
     padding-top: 50px;
     padding-left: 60px;
+  }
+
+  .page-main__text {
+    font-size: 20px;
+    width: 330px;
+    line-height: 1.5;
+    margin-bottom: 70px;
   }
 }
 
