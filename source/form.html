@@ -36,18 +36,24 @@
       <form class="page-main__form order-form" method="POST" action="https://echo.htmlacademy.ru">
         <fieldset class="order-form__fieldset cat-info">
           <div class="cat-info__container">
-            <label class="cat-info__label cat-info__label--name order-form__text" for="cat-info__input-name">
-              Имя:*
-            </label>
-            <input id="cat-info__input-name" class="cat-info__input cat-info__input--name order-form__text" type="text" name="cat-name" placeholder="Барсик">
-            <label class="cat-info__label cat-info__label--weight" for="cat-info__input-weight">
-              Вес (кг):*
-            </label>
-            <input id="cat-info__input-weight" class="cat-info__input cat-info__input--weight" type="number" name="cat-weight" placeholder="7">
-            <label class="cat-info__label cat-info__label--age order-form__text" for="cat-info__input-age">
-              Возраст (лет):
-            </label>
-            <input id="cat-info__input-age" class="cat-info__input cat-info__input--age" type="number" name="cat-age" placeholder="7">
+            <div class="cat-info__wrapper">
+              <label class="cat-info__label cat-info__label--name order-form__text" for="cat-info__input-name">
+                Имя:*
+              </label>
+              <input id="cat-info__input-name" class="cat-info__input cat-info__input--name order-form__text" type="text" name="cat-name" placeholder="Барсик">
+            </div>
+            <div class="cat-info__wrapper">
+              <label class="cat-info__label cat-info__label--weight" for="cat-info__input-weight">
+                Вес (кг):*
+              </label>
+              <input id="cat-info__input-weight" class="cat-info__input cat-info__input--weight" type="number" name="cat-weight" placeholder="7">
+            </div>
+            <div class="cat-info__wrapper">
+              <label class="cat-info__label cat-info__label--age order-form__text" for="cat-info__input-age">
+                Возраст (лет):
+              </label>
+              <input id="cat-info__input-age" class="cat-info__input cat-info__input--age" type="number" name="cat-age" placeholder="7">
+            </div>
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset order-goal">
@@ -67,14 +73,18 @@
         <fieldset class="order-form__fieldset order-contacts">
           <h2 class="order-contacts__header section-title">Контактные данные (владельца кота)</h2>
           <div class="order-contacts__wrapper">
-            <label class="order-contacts__label order-form__text" for="order-contacts__input-email">
-              E-mail:*
-            </label>
-            <input id="order-contacts__input-email" class="order-contacts__input order-contacts__input--email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
-            <label class="order-contacts__label order-form__text" for="order-contacts__input-phone">
-              Телефон:*
-            </label>
-            <input id="order-contacts__input-phone" class="order-contacts__input order-contacts__input--phone" type="tel" name="input-phone" placeholder="8 (960) 900-60-90">
+            <div class="order-contacts__container">
+              <label class="order-contacts__label order-form__text" for="order-contacts__input-email">
+                E-mail:*
+              </label>
+              <input id="order-contacts__input-email" class="order-contacts__input order-contacts__input--email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
+            </div>
+            <div class="order-contacts__container">
+              <label class="order-contacts__label order-form__text" for="order-contacts__input-phone">
+                Телефон:*
+              </label>
+              <input id="order-contacts__input-phone" class="order-contacts__input order-contacts__input--phone" type="tel" name="input-phone" placeholder="8 (960) 900-60-90">
+            </div>
           </div>
         </fieldset>
         <fieldset class="order-form__fieldset order-comment">
