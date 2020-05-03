@@ -11,9 +11,9 @@
         <a class="page-header__logo" href="index.html">
           <img class="page-header__image" src="img/logo-mobile.svg" alt="Изображение логотипа">
         </a>
-        <button class="page-header__toogle"></button>
+        <button class="page-header__toogle page-header__toogle--opened page-header__toogle--no-js"></button>
       </div>
-      <nav class="page-header__navigation">
+      <nav class="page-header__navigation page-header__navigation--opened">
         <ul class="page-header__list">
           <li class="page-header__item">
             <a class="page-header__link page-header__link--menu" href="index.html">Главная</a>
@@ -28,12 +28,14 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__description">
-        <h1 class="page-main__header page-main__header--inversion">Функциональное питание для котов</h1>
-        <b class="page-main__tagline">Занялся собой? Займись котом!</b>
-        <a class="page-main__select-program order-link order-link--small" href="form.html">Подобрать программу</a>
+      <div class="page-main__desc-wrapper">
+        <div class="page-main__description">
+          <h1 class="page-main__header page-main__header--inversion">Функциональное питание для котов</h1>
+          <b class="page-main__tagline">Занялся собой? Займись котом!</b>
+          <a class="page-main__select-program order-link order-link--small" href="form.html">Подобрать программу</a>
+        </div>
+        <img class="page-main__image" src="img/index-can-mobile@1x.png" alt="Картинка с едой">
       </div>
-      <img class="page-main__image" src="img/index-can-mobile@1x.png" alt="Картинка с едой">
       <div class="page-main__wrapper">
         <section class="page-main__food-types food-categories">
           <div class="food-categories__item">
@@ -171,5 +173,29 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      const toogleButton = document.querySelector('.page-header__toogle');
+      const menu = document.querySelector('.page-header__navigation');
+
+      toogleButton.classList.remove('page-header__toogle--no-js');
+
+      toogleButton.addEventListener('click', function () {
+        if (toogleButton.classList.contains('page-header__toogle--opened')) {
+          toogleButton.classList.remove('page-header__toogle--opened');
+          toogleButton.classList.add('page-header__toogle--closed');
+
+          menu.classList.add('page-header__navigation--closed');
+          menu.classList.remove('page-header__navigation--opened');
+        } else {
+          toogleButton.classList.add('page-header__toogle--opened');
+          toogleButton.classList.remove('page-header__toogle--closed');
+
+          menu.classList.add('page-header__navigation--opened');
+          menu.classList.remove('page-header__navigation--closed');
+        }
+      });
+    </script>
+
   </body>
 </html>
