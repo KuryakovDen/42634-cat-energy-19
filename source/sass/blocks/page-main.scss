@@ -129,6 +129,10 @@
 }
 
 @media (min-width: 1200px) {
+  .page-main {
+    width: 1100px;
+  }
+
   .page-main__image {
     z-index: 2;
     width: 552px;
@@ -162,5 +166,15 @@
       margin-top: 135px;
       left: -500px;
     }
+
+    &--select {
+      margin: auto;
+      margin-bottom: 50px;
+    }
+  }
+
+  .page-main__text {
+    margin-left: 0;
+    margin-bottom: 70px;
   }
 }

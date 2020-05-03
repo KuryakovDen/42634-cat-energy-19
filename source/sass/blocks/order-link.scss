@@ -65,10 +65,16 @@
 
 @media (min-width: 1200px) {
   .order-link {
+    box-sizing: border-box;
+
     &--small {
       position: absolute;
       top: 390px;
       left: 205px;
+    }
+
+    &--send {
+      width: 570px;
     }
   }
 }

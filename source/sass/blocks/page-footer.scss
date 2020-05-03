@@ -62,3 +62,10 @@
     margin-right: 30px;
   }
 }
+
+@media (min-width: 1200px) {
+  .page-footer {
+    position: relative;
+    width: 1100px;
+  }
+}

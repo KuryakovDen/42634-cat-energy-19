@@ -59,3 +59,27 @@
     }
   }
 }
+
+
+@media (min-width: 1200px) {
+  .order-contacts__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .order-contacts__label {
+    white-space: nowrap;
+  }
+
+  .order-contacts__input {
+    box-sizing: border-box;
+
+    &--email {
+      width: 485px;
+    }
+
+    &--phone {
+      width: 470px;
+    }
+  }
+}

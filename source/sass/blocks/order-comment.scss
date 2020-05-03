@@ -31,3 +31,10 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: 1200px) {
+  .order-comment__textarea {
+    width: 1100px;
+    height: 175px;
+  }
+}

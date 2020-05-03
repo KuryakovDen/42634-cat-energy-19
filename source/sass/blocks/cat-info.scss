@@ -65,3 +65,37 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: 1200px) {
+  .cat-info {
+    padding: 0;
+  }
+
+  .cat-info__label {
+    margin-left: 0;
+    margin-right: 18px;
+  }
+
+  .cat-info__container {
+    margin-right: 80px;
+  }
+
+  .cat-info__input {
+    &--name {
+      width: 505px;
+    }
+
+    &--weight {
+      width: 475px;
+    }
+
+    &--age {
+      width: 435px;
+    }
+
+    &::placeholder {
+      color: black;
+      font-size: 20px;
+    }
+  }
+}

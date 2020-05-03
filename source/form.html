@@ -34,42 +34,44 @@
         программу питания для вашего кота
       </p>
       <form class="page-main__form order-form" method="POST" action="https://echo.htmlacademy.ru">
-        <fieldset class="order-form__fieldset cat-info">
-          <div class="cat-info__container">
-            <div class="cat-info__wrapper">
-              <label class="cat-info__label cat-info__label--name order-form__text" for="cat-info__input-name">
-                Имя:*
-              </label>
-              <input id="cat-info__input-name" class="cat-info__input cat-info__input--name order-form__text" type="text" name="cat-name" placeholder="Барсик">
+        <div class="order-form__wrapper">
+          <fieldset class="order-form__fieldset cat-info">
+            <div class="cat-info__container">
+              <div class="cat-info__wrapper">
+                <label class="cat-info__label cat-info__label--name order-form__text" for="cat-info__input-name">
+                  Имя:*
+                </label>
+                <input id="cat-info__input-name" class="cat-info__input cat-info__input--name order-form__text" type="text" name="cat-name" placeholder="Барсик">
+              </div>
+              <div class="cat-info__wrapper">
+                <label class="cat-info__label cat-info__label--weight" for="cat-info__input-weight">
+                  Вес (кг):*
+                </label>
+                <input id="cat-info__input-weight" class="cat-info__input cat-info__input--weight" type="number" name="cat-weight" placeholder="7">
+              </div>
+              <div class="cat-info__wrapper">
+                <label class="cat-info__label cat-info__label--age order-form__text" for="cat-info__input-age">
+                  Возраст (лет):
+                </label>
+                <input id="cat-info__input-age" class="cat-info__input cat-info__input--age" type="number" name="cat-age" placeholder="7">
+              </div>
             </div>
-            <div class="cat-info__wrapper">
-              <label class="cat-info__label cat-info__label--weight" for="cat-info__input-weight">
-                Вес (кг):*
-              </label>
-              <input id="cat-info__input-weight" class="cat-info__input cat-info__input--weight" type="number" name="cat-weight" placeholder="7">
-            </div>
-            <div class="cat-info__wrapper">
-              <label class="cat-info__label cat-info__label--age order-form__text" for="cat-info__input-age">
-                Возраст (лет):
-              </label>
-              <input id="cat-info__input-age" class="cat-info__input cat-info__input--age" type="number" name="cat-age" placeholder="7">
-            </div>
-          </div>
-        </fieldset>
-        <fieldset class="order-form__fieldset order-goal">
-          <label class="order-goal__label">
-            <input class="order-goal__input" type="radio" name="order-goal__radio" checked>
-            <span class="order-goal__span order-form__text">Похудение</span>
-          </label>
-          <label class="order-goal__label">
-            <input class="order-goal__span" type="radio" name="order-goal__radio">
-            <span class="order-goal__span order-form__text">Набор массы</span>
-          </label>
-          <label class="order-goal__label">
-            <input class="order-goal__span" type="radio" name="order-goal__radio">
-            <span class="order-goal__span order-form__text">Не знаю (Нужен ваш совет)</span>
-          </label>
-        </fieldset>
+          </fieldset>
+          <fieldset class="order-form__fieldset order-goal">
+            <label class="order-goal__label">
+              <input class="order-goal__input" type="radio" name="order-goal__radio" checked>
+              <span class="order-goal__span order-form__text">Похудение</span>
+            </label>
+            <label class="order-goal__label">
+              <input class="order-goal__span" type="radio" name="order-goal__radio">
+              <span class="order-goal__span order-form__text">Набор массы</span>
+            </label>
+            <label class="order-goal__label">
+              <input class="order-goal__span" type="radio" name="order-goal__radio">
+              <span class="order-goal__span order-form__text">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </fieldset>
+        </div>
         <fieldset class="order-form__fieldset order-contacts">
           <h2 class="order-contacts__header section-title">Контактные данные (владельца кота)</h2>
           <div class="order-contacts__wrapper">
@@ -121,7 +123,7 @@
       </form>
     </main>
     <footer class="page-footer">
-      <section class="page-footer__cooperation cooperation cooperation--passive">
+      <section class="page-footer__cooperation cooperation cooperation--passive cooperation--reverse">
         <b class="cooperation__tagline">приглашаем к сотрудничеству дилеров!</b>
         <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <br> Санкт-Петербург</address>
       </section>

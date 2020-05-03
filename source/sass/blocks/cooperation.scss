@@ -77,3 +77,27 @@
     min-height: 150px;
   }
 }
+
+@media (min-width: 1200px) {
+  .cooperation {
+    position: absolute;
+    z-index: 2;
+    width: 570px;
+    top: 100px;
+    left: 110px;
+
+    &--reverse {
+      background-color: white;
+    }
+  }
+
+  .cooperation__map {
+    width: 1100px;
+  }
+
+  .cooperation__wrapper {
+    justify-content: space-between;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+}

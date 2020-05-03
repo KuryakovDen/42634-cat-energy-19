@@ -32,3 +32,17 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .order-over__wrapper {
+    width: auto;
+  }
+
+  .order-over__label {
+    margin-right: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
