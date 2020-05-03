@@ -131,4 +131,58 @@
   .example {
     width: 720px;
   }
+
+  .example__item {
+    display: block;
+    width: 162px;
+    height: 72px;
+    box-sizing: border-box;
+
+    &:first-child {
+      margin-right: 40px;
+    }
+
+    &::before,
+    &::after {
+      white-space: nowrap;
+      top: 48px;
+    }
+
+    &::before {
+      left: 23px;
+    }
+
+    &::after {
+      left: 12px;
+    }
+  }
+
+  .example__description {
+    width: 674px;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  .example__info {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .example__cost {
+    width: 175px;
+    font-size: 20px;
+    padding-right: 20px;
+    text-align: right;
+  }
+
+  .example__result {
+    margin: 0;
+  }
+
+  .example__wrapper {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }

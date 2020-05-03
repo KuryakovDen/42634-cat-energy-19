@@ -106,3 +106,21 @@
     padding-left: 0;
   }
 }
+
+@media (min-width: 1200px) {
+  .howitworks__list {
+    width: 1200px;
+  }
+
+  .howitworks__item {
+    margin-right: 90px;
+
+    &:nth-child(2n) {
+      margin-right: 90px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}

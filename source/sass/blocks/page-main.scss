@@ -76,8 +76,11 @@
   }
 
   .page-main__description {
+    position: relative;
     min-width: 410px;
+    margin-left: 80px;
     background-image: none;
+    z-index: 2;
   }
 
   .page-main__header {
@@ -94,8 +97,6 @@
       text-align: left;
       font-size: 60px;
       width: 435px;
-      position: absolute;
-      left: 105px;
     }
 
     &--select {
@@ -107,9 +108,7 @@
     color: black;
     text-align: left;
     font-size: 20px;
-    position: absolute;
-    left: 108px;
-    top: 333px;
+    margin-bottom: 50px;
   }
 
   .page-main__image {
@@ -118,6 +117,7 @@
     height: 610px;
     padding-top: 50px;
     padding-left: 60px;
+    z-index: -1;
   }
 
   .page-main__text {
@@ -161,6 +161,8 @@
   }
 
   .page-main__header {
+    text-align: left;
+
     &--inversion {
       position: absolute;
       margin-top: 135px;
@@ -181,5 +183,9 @@
   .page-main__container {
     width: 1220px;
     display: flex;
+  }
+
+  .page-main__wrapper {
+    width: 1200px;
   }
 }
