@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
@@ -11,9 +12,9 @@
         <a class="page-header__logo" href="index.html">
           <img class="page-header__image" src="img/logo-mobile.svg" alt="Изображение логотипа">
         </a>
-        <button class="page-header__toogle"></button>
+        <button class="page-header__toogle page-header__toogle--opened page-header__toogle--no-js"></button>
       </div>
-      <nav class="page-header__navigation">
+      <nav class="page-header__navigation page-header__navigation--opened">
         <ul class="page-header__list">
           <li class="page-header__item">
             <a class="page-header__link" href="index.html">Главная</a>
@@ -323,5 +324,27 @@
         </div>
       </div>
     </footer>
+    <script>
+      const toogleButton = document.querySelector('.page-header__toogle');
+      const menu = document.querySelector('.page-header__navigation');
+
+      toogleButton.classList.remove('page-header__toogle--no-js');
+
+      toogleButton.addEventListener('click', function () {
+        if (toogleButton.classList.contains('page-header__toogle--opened')) {
+          toogleButton.classList.remove('page-header__toogle--opened');
+          toogleButton.classList.add('page-header__toogle--closed');
+
+          menu.classList.add('page-header__navigation--closed');
+          menu.classList.remove('page-header__navigation--opened');
+        } else {
+          toogleButton.classList.add('page-header__toogle--opened');
+          toogleButton.classList.remove('page-header__toogle--closed');
+
+          menu.classList.add('page-header__navigation--opened');
+          menu.classList.remove('page-header__navigation--closed');
+        }
+      });
+    </script>
   </body>
 </html>

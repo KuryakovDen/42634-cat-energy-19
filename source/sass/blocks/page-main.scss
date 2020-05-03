@@ -190,6 +190,12 @@
   }
 
   .page-main__desc-wrapper {
+    width: 1440px;
     display: flex;
+    flex-direction: row-reverse;
+    margin-top: -140px;
+    margin-left: -300px;
+    margin-bottom: 80px;
+    box-sizing: border-box;
   }
 }

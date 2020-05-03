@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
@@ -11,9 +12,9 @@
         <a class="page-header__logo" href="index.html">
           <img class="page-header__image" src="img/logo-mobile.svg" alt="Изображение логотипа">
         </a>
-        <button class="page-header__toogle"></button>
+        <button class="page-header__toogle page-header__toogle--opened page-header__toogle--no-js"></button>
       </div>
-      <nav class="page-header__navigation">
+      <nav class="page-header__navigation page-header__navigation--opened">
         <ul class="page-header__list">
           <li class="page-header__item">
             <a class="page-header__link" href="index.html">Главная</a>
@@ -41,13 +42,13 @@
                 <label class="cat-info__label cat-info__label--name order-form__text" for="cat-info__input-name">
                   Имя:*
                 </label>
-                <input id="cat-info__input-name" class="cat-info__input cat-info__input--name order-form__text" type="text" name="cat-name" placeholder="Барсик">
+                <input id="cat-info__input-name" class="cat-info__input cat-info__input--name order-form__text" type="text" name="cat-name" placeholder="Барсик" required>
               </div>
               <div class="cat-info__wrapper">
                 <label class="cat-info__label cat-info__label--weight" for="cat-info__input-weight">
                   Вес (кг):*
                 </label>
-                <input id="cat-info__input-weight" class="cat-info__input cat-info__input--weight" type="number" name="cat-weight" placeholder="7">
+                <input id="cat-info__input-weight" class="cat-info__input cat-info__input--weight" type="number" name="cat-weight" placeholder="7" required>
               </div>
               <div class="cat-info__wrapper">
                 <label class="cat-info__label cat-info__label--age order-form__text" for="cat-info__input-age">
@@ -79,13 +80,13 @@
               <label class="order-contacts__label order-form__text" for="order-contacts__input-email">
                 E-mail:*
               </label>
-              <input id="order-contacts__input-email" class="order-contacts__input order-contacts__input--email" type="email" name="input-email" placeholder="kuklachev@gmail.com">
+              <input id="order-contacts__input-email" class="order-contacts__input order-contacts__input--email" type="email" name="input-email" placeholder="kuklachev@gmail.com" required>
             </div>
             <div class="order-contacts__container">
               <label class="order-contacts__label order-form__text" for="order-contacts__input-phone">
                 Телефон:*
               </label>
-              <input id="order-contacts__input-phone" class="order-contacts__input order-contacts__input--phone" type="tel" name="input-phone" placeholder="8 (960) 900-60-90">
+              <input id="order-contacts__input-phone" class="order-contacts__input order-contacts__input--phone" type="tel" name="input-phone" placeholder="8 (960) 900-60-90" required>
             </div>
           </div>
         </fieldset>
@@ -183,5 +184,27 @@
         </div>
       </div>
     </footer>
+    <script>
+      const toogleButton = document.querySelector('.page-header__toogle');
+      const menu = document.querySelector('.page-header__navigation');
+
+      toogleButton.classList.remove('page-header__toogle--no-js');
+
+      toogleButton.addEventListener('click', function () {
+        if (toogleButton.classList.contains('page-header__toogle--opened')) {
+          toogleButton.classList.remove('page-header__toogle--opened');
+          toogleButton.classList.add('page-header__toogle--closed');
+
+          menu.classList.add('page-header__navigation--closed');
+          menu.classList.remove('page-header__navigation--opened');
+        } else {
+          toogleButton.classList.add('page-header__toogle--opened');
+          toogleButton.classList.remove('page-header__toogle--closed');
+
+          menu.classList.add('page-header__navigation--opened');
+          menu.classList.remove('page-header__navigation--closed');
+        }
+      });
+    </script>
   </body>
 </html>
