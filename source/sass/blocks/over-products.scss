@@ -83,9 +83,30 @@
 @media (min-width: 1200px) {
   .over-products {
     width: 1100px;
+    box-sizing: border-box;
+  }
+
+  .over-products__title {
+    padding: 0;
   }
 
   .over-products__link {
     width: 245px;
+    margin: 0;
+  }
+
+  .over-products__wrapper {
+    width: 605px;
+  }
+
+  .over-products__item {
+    width: 895px;
+    display: flex;
+    border-right: none;
+    border-left: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    margin-right: 0;
   }
 }

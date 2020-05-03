@@ -60,3 +60,17 @@
     text-align: left;
   }
 }
+
+@media (min-width: 1200px) {
+  .present {
+    width: 280px;
+    height: 290px;
+    margin: auto;
+  }
+
+  .present__text {
+    left: 55px;
+    top: 180px;
+    text-align: center;
+  }
+}
