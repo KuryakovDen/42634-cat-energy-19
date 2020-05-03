@@ -198,3 +198,41 @@
     text-align: center;
   }
 }
+
+@media (min-width: 1200px) {
+  .catalog {
+    width: 1200px;
+  }
+
+  .catalog__card {
+    box-sizing: border-box;
+    width: 245px;
+    height: 430px;
+  }
+
+  .catalog__wrapper {
+    box-sizing: border-box;
+    width: 245px;
+    height: 430px;
+
+    &:nth-child(2n) {
+      margin-right: 75px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .catalog__image {
+    &--fish500 {
+      width: 163px;
+      height: 174px;
+    }
+  }
+
+  .catalog__table,
+  .catalog__tr {
+    width: 170px;
+  }
+}

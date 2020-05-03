@@ -79,3 +79,13 @@
     box-sizing: border-box;
   }
 }
+
+@media (min-width: 1200px) {
+  .over-products {
+    width: 1100px;
+  }
+
+  .over-products__link {
+    width: 245px;
+  }
+}
