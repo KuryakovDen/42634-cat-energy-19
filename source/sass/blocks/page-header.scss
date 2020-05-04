@@ -8,7 +8,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #c2c2c2;
 }
 
 .page-header__logo {
@@ -90,7 +89,7 @@
   box-sizing: border-box;
 
   &:first-child {
-    border-top: none;
+    border-top: 1px solid #c2c2c2;
   }
 }
 
