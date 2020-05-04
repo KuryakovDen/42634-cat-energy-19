@@ -10,7 +10,7 @@
   line-height: 1;
   margin: 0;
   padding-top: 25px;
-  margin-bottom: 32px;
+  margin-bottom: 39px;
 
   &--inversion {
     color: white;
@@ -24,12 +24,21 @@
     margin-bottom: 35px;
     text-align: left;
   }
+
+  &--catalog {
+    text-align: left;
+    padding-left: 22px;
+  }
 }
 
 .page-main__description {
   width: 320px;
   height: 305px;
   margin-top: -300px;
+}
+
+.page-main__container {
+  margin: auto;
 }
 
 .page-main__background {
@@ -63,7 +72,6 @@
 .page-main__wrapper {
   width: 320px;
   margin-right: 20px;
-  margin-bottom: 45px;
 }
 
 .page-main__example-wrapper {
@@ -79,6 +87,8 @@
 }
 
 .page-main__present {
+  margin: auto;
+  margin-top: 40px;
   margin-bottom: 35px;
 }
 

@@ -5,8 +5,12 @@
 }
 
 .over-products__item {
+  width: 280px;
+  height: 130px;
+  margin: auto;
   border-top: 1px solid lightgrey;
   padding-bottom: 17px;
+  box-sizing: border-box;
 
   &:last-child {
     border-bottom: 1px solid lightgrey;
@@ -18,22 +22,33 @@
   font-weight: normal;
   font-size: 16px;
   text-align: left;
+  margin: 0;
+  margin-top: 12px;
 }
 
 .over-products__tr {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
   width: 280px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   text-align: left;
 }
 
+.over-products__table {
+  margin-top: 7px;
+}
+
 .over-products__header {
   display: block;
-  margin-top: 50px;
   margin-left: 20px;
+  margin-bottom: 30px;
+}
+
+.over-products__wrapper {
+  width: 280px;
+  margin: auto;
 }
 
 @media (min-width: 768px) {

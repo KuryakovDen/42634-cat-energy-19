@@ -19,6 +19,8 @@
   font-weight: normal;
   line-height: 1.25;
   text-align: left;
+  padding-top: 4px;
+  margin-bottom: 10px;
 
   &--more {
     text-align: center;
@@ -31,7 +33,7 @@
 .catalog__header-tagline {
   display: block;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 10px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   font-weight: normal;
@@ -61,14 +63,27 @@
 
 .catalog__card {
   display: flex;
-  min-height: 210px;
+  flex-direction: column;
+  height: 209px;
+  border: 1px solid #cdcdcd;
+  border-top: none;
+  box-sizing: border-box;
+
+  &:first-child {
+    border: 1px solid #cdcdcd;
+  }
 
   &--more {
-    border-top: 1px solid lightgrey;
     border-bottom: 1px solid lightgrey;
-    margin-top: 25px;
-    margin-bottom: 30px;
   }
+}
+
+.catalog__wrapper {
+  display: flex;
+  width: 280px;
+  margin: auto;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 @media (min-width: 768px) {
