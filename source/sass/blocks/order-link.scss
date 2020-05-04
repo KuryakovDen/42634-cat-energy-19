@@ -13,20 +13,40 @@
   font-family: "Oswald", "Helvetica", sans-serif;
 
   &--small {
+    position: relative;
     font-size: 14px;
-  }
-
-  &--all {
-    display: block;
-    background-color: #f2f2f2;
-    font-size: 16px;
-    color: black;
-    margin-top: -100px;
+    z-index: 2;
+    margin: auto;
+    margin-top: 295px;
   }
 
   &--catalog,
   &-all {
     margin-top: -50px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.order-link--all {
+  display: block;
+  background-color: #f2f2f2;
+  font-size: 16px;
+  color: black;
+  margin-top: -100px;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
   }
 }
 
@@ -41,9 +61,9 @@
       width: 245px;
       height: 52px;
       font-size: 20px;
-      position: absolute;
-      top: 400px;
-      left: 110px;
+      z-index: 2;
+      margin-top: 0;
+      margin-left: 0;
     }
 
     &--catalog {
@@ -65,10 +85,15 @@
 
 @media (min-width: 1200px) {
   .order-link {
-    &--small {
-      position: absolute;
-      top: 390px;
-      left: 205px;
+    box-sizing: border-box;
+
+    &--send {
+      width: 570px;
+    }
+
+    &--catalog,
+    &--all {
+      width: 170px;
     }
   }
 }

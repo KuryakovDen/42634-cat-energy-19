@@ -131,3 +131,47 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: 1200px) {
+  .food-categories {
+    display: flex;
+  }
+
+  .food-categories__header {
+    margin-left: 200px;
+
+    &::after {
+      width: 100px;
+      height: 100px;
+      left: -145px;
+      top: 10px;
+    }
+  }
+
+  .food-categories__header--slim {
+    &::before {
+      width: 70px;
+      height: 97px;
+      left: -125px;
+      top: 10px;
+    }
+  }
+
+  .food-categories__header--gain {
+    &::before {
+      width: 135px;
+      height: 57px;
+      left: -160px;
+      top: 30px;
+    }
+  }
+
+  .food-categories__item {
+    width: 470px;
+    min-height: 370px;
+
+    &:first-child {
+      margin-right: 80px;
+    }
+  }
+}

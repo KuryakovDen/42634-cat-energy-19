@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
@@ -11,9 +12,9 @@
         <a class="page-header__logo" href="index.html">
           <img class="page-header__image" src="img/logo-mobile.svg" alt="Изображение логотипа">
         </a>
-        <button class="page-header__toogle"></button>
+        <button class="page-header__toogle page-header__toogle--opened page-header__toogle--no-js"></button>
       </div>
-      <nav class="page-header__navigation">
+      <nav class="page-header__navigation page-header__navigation--opened">
         <ul class="page-header__list">
           <li class="page-header__item">
             <a class="page-header__link page-header__link--menu" href="index.html">Главная</a>
@@ -28,13 +29,18 @@
       </nav>
     </header>
     <main class="page-main">
-      <div class="page-main__description">
-        <h1 class="page-main__header page-main__header--inversion">Функциональное питание для котов</h1>
-        <b class="page-main__tagline">Занялся собой? Займись котом!</b>
+      <div class="page-main__desc-wrapper">
+        <div class="page-main__background"></div>
+        <div class="page-main__desctop-wrapper">
+          <div class="page-main__description">
+            <h1 class="page-main__header page-main__header--inversion">Функциональное питание для котов</h1>
+            <b class="page-main__tagline">Занялся собой? Займись котом!</b>
+            <a class="page-main__select-program order-link order-link--small" href="form.html">Подобрать программу</a>
+          </div>
+          <img class="page-main__image" src="img/index-can-mobile@1x.png" alt="Картинка с едой">
+        </div>
       </div>
-      <img class="page-main__image" src="img/index-can-mobile@1x.png" alt="Картинка с едой">
       <div class="page-main__wrapper">
-        <a class="page-main__select-program order-link order-link--small" href="form.html">Подобрать программу</a>
         <section class="page-main__food-types food-categories">
           <div class="food-categories__item">
             <h3 class="food-categories__header food-categories__header--slim">Похудение</h3>
@@ -83,15 +89,17 @@
             Отличный результат без изнуряющих тренировок!
             При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-          <div class="example__result">
-            <div class="example__item example__item--weight">
-              <p class="example__info">5 кг</p>
+          <div class="example__wrapper">
+            <div class="example__result">
+              <div class="example__item example__item--weight">
+                <p class="example__info">5 кг</p>
+              </div>
+              <div class="example__item example__item--days">
+                <p class="example__info">60 дней</p>
+              </div>
             </div>
-            <div class="example__item example__item--days">
-              <p class="example__info">60 дней</p>
-            </div>
+            <p class="example__cost">Затраты на питание: 15 000 руб.</p>
           </div>
-          <p class="example__cost">Затраты на питание: 15 000 руб.</p>
           <img class="example__img" src="img/before-mobile@1x.png" alt="Картинка кота">
           <div class="example__status">
             <label class="example__label example__label--before">
@@ -169,5 +177,27 @@
         </div>
       </div>
     </footer>
+    <script>
+      const toogleButton = document.querySelector('.page-header__toogle');
+      const menu = document.querySelector('.page-header__navigation');
+
+      toogleButton.classList.remove('page-header__toogle--no-js');
+
+      toogleButton.addEventListener('click', function () {
+        if (toogleButton.classList.contains('page-header__toogle--opened')) {
+          toogleButton.classList.remove('page-header__toogle--opened');
+          toogleButton.classList.add('page-header__toogle--closed');
+
+          menu.classList.add('page-header__navigation--closed');
+          menu.classList.remove('page-header__navigation--opened');
+        } else {
+          toogleButton.classList.add('page-header__toogle--opened');
+          toogleButton.classList.remove('page-header__toogle--closed');
+
+          menu.classList.add('page-header__navigation--opened');
+          menu.classList.remove('page-header__navigation--closed');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -12,3 +12,17 @@
     margin-top: 25px;
   }
 }
+
+@media (min-width: 768px) {
+  .order-goal {
+    border: 1px solid #cdcdcd;
+  }
+}
+
+@media (min-width: 1200px) {
+  .order-goal {
+    width: 570px;
+    height: 195px;
+    box-sizing: border-box;
+  }
+}

@@ -1,4 +1,4 @@
-.present__text {
+.present {
   display: block;
   width: 280px;
   height: 290px;
@@ -26,5 +26,51 @@
     background-position: center;
     left: 110px;
     top: 60px;
+  }
+}
+
+.present__text {
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .present {
+    position: relative;
+    width: 708px;
+    height: 200px;
+    background-color: green;
+    margin: 0;
+    margin-top: 70px;
+    left: 0;
+    padding-bottom: 30px;
+
+    &::before {
+      top: 78px;
+      color: white;
+    }
+  }
+
+  .present__text {
+    position: absolute;
+    left: 425px;
+    top: 80px;
+    display: block;
+    width: 160px;
+    line-height: 1.25;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .present {
+    width: 280px;
+    height: 290px;
+    margin: auto;
+  }
+
+  .present__text {
+    left: 55px;
+    top: 180px;
+    text-align: center;
   }
 }

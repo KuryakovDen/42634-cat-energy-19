@@ -34,4 +34,52 @@
     display: flex;
     flex-direction: column;
   }
+
+  .order-contacts__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .order-contacts__input {
+    margin: auto;
+
+    &--email {
+      width: 535px;
+    }
+
+    &--phone {
+      width: 500px;
+    }
+
+    &::placeholder {
+      color: black;
+      font-size: 20px;
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .order-contacts__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .order-contacts__label {
+    white-space: nowrap;
+  }
+
+  .order-contacts__input {
+    box-sizing: border-box;
+
+    &--email {
+      width: 485px;
+    }
+
+    &--phone {
+      width: 470px;
+    }
+  }
 }

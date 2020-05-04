@@ -12,6 +12,14 @@
 
 .page-header__logo {
   display: block;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-header__image {
@@ -22,20 +30,44 @@
 }
 
 .page-header__toogle {
-  display: block;
-  width: 19px;
-  height: 19px;
-  background-image: url("../img/icon-close.svg");
-  background-color: white;
-  background-repeat: no-repeat;
-  border: none;
-  margin-left: 70px;
-  cursor: pointer;
+  &--opened {
+    display: block;
+    width: 19px;
+    height: 19px;
+    background-image: url("../img/icon-close.svg");
+    background-color: white;
+    background-repeat: no-repeat;
+    border: none;
+    margin-left: 70px;
+    cursor: pointer;
+  }
+
+  &--closed {
+    display: block;
+    width: 19px;
+    height: 19px;
+    background-color: white;
+    background-repeat: no-repeat;
+    border: none;
+    margin-left: 70px;
+    cursor: pointer;
+    background-image: url("../img/icon-mobile-menu.svg");
+  }
+
+  &--no-js {
+    display: none;
+  }
 }
 
 .page-header__navigation {
-  width: 320px;
-  border-top: 1px solid #8080804d;
+  &--opened {
+    width: 320px;
+    border-top: 1px solid #8080804d;
+  }
+
+  &--closed {
+    display: none;
+  }
 }
 
 .page-header__list {
@@ -58,6 +90,14 @@
   text-decoration: none;
   font-size: 20px;
   color: black;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -89,6 +129,9 @@
   }
 
   .page-header__link {
+    font-size: 18px;
+    font-weight: normal;
+
     &:hover {
       padding-bottom: 8px;
       border-bottom: 2px solid #68b738;
@@ -103,11 +146,13 @@
 
 @media (min-width: 1200px) {
   .page-header {
-    width: 1200px;
+    width: 1100px;
+    box-sizing: border-box;
   }
 
   .page-header__navigation {
     z-index: 2;
+    width: 650px;
   }
 
   .page-header__link {
@@ -124,6 +169,10 @@
     &:hover {
       border-bottom: 2px solid white;
     }
+  }
+
+  .page-header__logo-wrapper {
+    width: auto;
   }
 
   .page-header__image {

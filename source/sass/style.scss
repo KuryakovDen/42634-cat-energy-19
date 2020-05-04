@@ -42,9 +42,30 @@ body {
   align-items: center;
   min-width: 320px;
   font-family: "Oswald", "Arial", sans-serif;
+  max-width: 1200px;
+  margin: auto;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+input {
+  opacity: 0.5;
+  border: solid 1px #cdcdcd;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    border: solid 2px #444444;
+    opacity: 1;
+  }
+
+  &:invalid {
+    border: solid 2px #ff8282;
+    opacity: 1;
+  }
 }
