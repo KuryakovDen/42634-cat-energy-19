@@ -30,9 +30,6 @@
   width: 320px;
   height: 305px;
   margin-top: -300px;
-  // background-image: url("../img/index-background-mobile@1x.jpg");
-  // background-repeat: no-repeat;
-  // background-size: 320px 305px;
 }
 
 .page-main__background {
@@ -48,7 +45,7 @@
   width: 280px;
   height: 270px;
   margin: 0 auto;
-  margin-top: -135px;
+  margin-top: -143px;
   margin-bottom: 65px;
 }
 
@@ -59,13 +56,18 @@
   font-weight: normal;
   color: white;
   text-align: center;
-  margin-top: -8px;
+  margin-top: -15px;
   margin-bottom: 30px;
 }
 
 .page-main__wrapper {
   width: 320px;
-  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 45px;
+}
+
+.page-main__example-wrapper {
+  width: 320px;
   margin-right: 20px;
 }
 

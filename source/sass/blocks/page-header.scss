@@ -79,11 +79,15 @@
 .page-header__item {
   list-style: none;
   text-transform: uppercase;
-  border-bottom: 1px solid #8080804d;
+  height: 65px;
+  border: 1px solid #8080804d;
+  border-top: none;
   padding: 20px;
+  line-height: 1;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: bold;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .page-header__link {
