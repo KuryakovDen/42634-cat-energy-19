@@ -62,7 +62,6 @@
 .page-header__navigation {
   &--opened {
     width: 320px;
-    border-top: 1px solid #8080804d;
   }
 
   &--closed {
@@ -79,11 +78,19 @@
 .page-header__item {
   list-style: none;
   text-transform: uppercase;
-  border-bottom: 1px solid #8080804d;
+  height: 65px;
+  border: 1px solid #8080804d;
+  border-top: none;
   padding: 20px;
+  line-height: 1;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: bold;
   text-align: center;
+  box-sizing: border-box;
+
+  &:first-child {
+    border-top: 1px solid #c2c2c2;
+  }
 }
 
 .page-header__link {

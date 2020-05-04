@@ -13,6 +13,7 @@
 
 .page-footer__list {
   width: 280px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -22,8 +23,8 @@
   padding-top: 25px;
   padding-bottom: 20px;
   box-sizing: border-box;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 75px;
+  padding-right: 80px;
 }
 
 .page-footer__item {
@@ -39,7 +40,7 @@
   width: 128px;
   height: 24px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 33px;
 }
 
 @media (min-width: 768px) {

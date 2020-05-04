@@ -1,3 +1,46 @@
+.section-title {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 200px;
+    background-color: #68b738;
+    top: 20px;
+    left: 167px;
+  }
+}
+
+.section-title--contacts {
+  &::after {
+    width: 100px;
+    top: 15px;
+    left: 205px;
+  }
+}
+
+.section-title--comment {
+  &::after {
+    width: 160px;
+    left: 147px;
+  }
+}
+
+.section-title--over {
+  &::after {
+    width: 135px;
+    left: 173px;
+  }
+}
+
+.section-title--orders {
+  &::after {
+    width: 44px;
+    left: 256px;
+  }
+}
+
 @media (min-width: 768px) {
   .section-title {
     font-size: 36px;

@@ -1,16 +1,74 @@
 .order-goal {
   display: flex;
-  border-top: 1px solid lightgrey;
-  border-bottom: 1px solid lightgrey;
+  border: 1px solid lightgrey;
+  box-sizing: border-box;
+  height: 158px;
 }
 
 .order-goal__label {
   display: block;
-  margin-bottom: 25px;
+  position: relative;
+  margin-bottom: 20px;
 
   &:first-child {
-    margin-top: 25px;
+    margin-top: 15px;
   }
+}
+
+.order-goal__input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: auto;
+  margin: -1px;
+}
+
+.order-goal__span {
+  margin-left: 50px;
+}
+
+.order-goal__indicator-circle {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #68b738;
+  margin: 0 auto;
+  margin-top: 9px;
+}
+
+.order-goal__label input[type="radio"] + .order-goal__indicator {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+}
+
+.order-goal__label input[type="radio"]:checked + .order-goal__indicator {
+  position: absolute;
+  left: 3px;
+  top: -5px;
+}
+
+.order-goal__label input[type="radio"]:not(:checked) + .order-goal__indicator {
+  left: 3px;
+  top: -5px;
+  background-color: wheat;
+}
+
+.order-goal__label input[type="radio"]:checked ~ .order-goal__indicator-circle {
+  display: block;
+}
+
+.order-goal__label input[type="radio"]:not(:checked) ~ .order-goal__indicator-circle {
+  display: none;
 }
 
 @media (min-width: 768px) {

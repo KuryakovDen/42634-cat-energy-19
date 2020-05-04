@@ -10,11 +10,19 @@
   padding-left: 15px;
 
   &--email {
-    width: 205px;
+    width: 200px;
   }
 
   &--phone {
-    width: 190px;
+    width: 184px;
+  }
+}
+
+.order-contacts__container {
+  height: 45px;
+
+  &:first-child {
+    margin-bottom: 15px;
   }
 }
 
@@ -22,11 +30,14 @@
   text-align: left;
   margin: 0;
   padding: 0;
-  margin-left: 7px;
+  margin-left: 5px;
+  margin-right: 10px;
 }
 
 .order-contacts__header {
+  display: block;
   line-height: 1;
+  margin-bottom: 33px;
 }
 
 @media (min-width: 768px) {

@@ -2,14 +2,76 @@
   display: flex;
 }
 
+.order-over__header {
+  margin: 0;
+  margin-bottom: 34px;
+}
+
 .order-over__label {
+  position: relative;
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
 
   &:first-child {
     margin-top: 25px;
   }
 }
+
+.order-over__input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: auto;
+  margin: -1px;
+}
+
+.order-over__span {
+  margin-left: 50px;
+}
+
+.order-over__indicator-circle {
+  display: block;
+  width: 22px;
+  height: 17px;
+
+  margin: 0 auto;
+  margin-top: 9px;
+}
+
+.order-over__label input[type="checkbox"] + .order-over__indicator {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 20px;
+  width: 30px;
+  height: 30px;
+  background-size: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid #cdcdcd;
+}
+
+.order-over__label input[type="checkbox"]:checked + .order-over__indicator {
+  left: 3px;
+  top: -5px;
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.order-over__label input[type="checkbox"]:not(:checked) + .order-over__indicator {
+  position: absolute;
+  left: 3px;
+  top: -5px;
+}
+
+.order-over__label input[type="checkbox"]:checked ~ .order-over__indicator-circle {
+  display: block;
+}
+
+.order-over__label input[type="checkbox"]:not(:checked) ~ .order-over__indicator-circle {
+  display: none;
+}
+
 
 @media (min-width: 768px) {
   .order-over__wrapper {

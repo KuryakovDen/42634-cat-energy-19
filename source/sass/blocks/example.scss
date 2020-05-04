@@ -4,10 +4,16 @@
 }
 
 .example__header {
-  padding-top: 35px;
+  padding-top: 30px;
+  padding-left: 20px;
+  margin-bottom: 35px;
 }
 
 .example__description {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 26px;
+  width: 268px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 1.29;
@@ -17,8 +23,10 @@
 .example__cost {
   text-transform: uppercase;
   line-height: 1.43;
+  font-size: 14px;
   text-align: center;
-  margin-top: 40px;
+  margin-top: 30px;
+  margin-bottom: 35px;
 }
 
 .example__result {
@@ -34,7 +42,7 @@
   position: relative;
   margin-right: 20px;
   padding-top: 35px;
-  padding-left: 40px;
+  padding-left: 65px;
   padding-bottom: 40px;
 }
 
@@ -55,9 +63,10 @@
 
 .example__img {
   display: block;
-  margin: 0;
+  width: 311px;
+  height: 235px;
+  margin-left: 5px;
   padding: 0;
-  margin-left: -20px;
 }
 
 .example__scale {
@@ -78,14 +87,15 @@
   }
 
   &--after {
-    margin-left: 20px;
+    margin-left: 10px;
   }
 }
 
 .example__info {
   font-size: 24px;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 5px;
+  text-transform: uppercase;
 }
 
 .example__item {
