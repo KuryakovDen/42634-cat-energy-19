@@ -115,4 +115,27 @@
       left: 250px;
     }
   }
+
+  .section-title--orders {
+    margin-left: 65px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    font-size: 34px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 3px;
+      background-color: #68b738;
+      width: 32px;
+      top: 29px;
+      left: -60px;
+    }
+
+    &::after {
+      width: 318px;
+      top: 29px;
+      left: 376px;
+    }
+  }
 }
