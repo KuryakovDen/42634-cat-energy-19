@@ -12,6 +12,7 @@
   padding: 0;
   margin-left: 5px;
   margin-right: 10px;
+  white-space: nowrap;
 }
 
 .cat-info__input {
@@ -21,6 +22,7 @@
   margin-bottom: 15px;
   font-family: "Oswald", "Helvetica", sans-serif;
   box-sizing: border-box;
+  min-height: 52px;
   padding-left: 15px;
 
   &--name {
@@ -40,6 +42,13 @@
   .cat-info__container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 28px;
+    margin-top: -5px;
+  }
+
+  .cat-info__label {
+    font-size: 20px;
   }
 
   .cat-info__input {
@@ -47,15 +56,15 @@
     margin: auto;
 
     &--name {
-      width: 568px;
+      width: 573px;
     }
 
     &--weight {
-      width: 535px;
+      width: 545px;
     }
 
     &--age {
-      width: 500px;
+      width: 505px;
     }
 
     &::placeholder {
@@ -69,6 +78,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+    margin-left: 25px;
   }
 }
 

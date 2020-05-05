@@ -28,15 +28,12 @@
   .order-comment__textarea {
     width: 630px;
     height: 175px;
+    margin-bottom: 35px;
 
     &::placeholder {
       color: black;
       font-size: 20px;
     }
-  }
-
-  .cat-info__label {
-    font-size: 20px;
   }
 }
 

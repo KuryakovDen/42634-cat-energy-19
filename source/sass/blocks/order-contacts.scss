@@ -44,16 +44,33 @@
   .order-contacts__wrapper {
     display: flex;
     flex-direction: column;
+    margin-left: 52px;
+    margin-bottom: 20px;
   }
 
   .order-contacts__container {
+    width: 645px;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+
+    &:first-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  .order-contacts__label {
+    white-space: nowrap;
+
+    &:first-child {
+      margin-right: 13px;
+    }
   }
 
   .order-contacts__input {
+    min-height: 45px;
     margin: auto;
 
     &--email {
@@ -61,7 +78,7 @@
     }
 
     &--phone {
-      width: 500px;
+      width: 516px;
     }
 
     &::placeholder {

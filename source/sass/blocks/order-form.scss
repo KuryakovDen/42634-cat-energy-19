@@ -28,15 +28,20 @@
   }
 
   .order-form__container {
-    width: 520px;
+    width: 535px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 75px;
+    margin-left: 50px;
+    margin-right: 10px;
   }
 
   .order-form__required {
     font-size: 16px;
+    margin-bottom: 0;
+    padding-left: 10px;
+    white-space: nowrap;
   }
 }
 
