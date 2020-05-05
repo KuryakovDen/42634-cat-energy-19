@@ -105,18 +105,24 @@
   .food-categories__item {
     width: 710px;
     min-height: 370px;
+
+    &:first-child {
+      margin-bottom: 38px;
+    }
   }
 
   .food-categories__header {
     font-size: 36px;
-    margin-left: 55px;
     font-weight: normal;
+    margin: 0;
+    margin-left: 55px;
+    padding-top: 67px;
 
     &::after {
       width: 200px;
       height: 200px;
       left: 390px;
-      top: 80px;
+      top: 91px;
     }
   }
 
@@ -124,7 +130,7 @@
     &::before {
       width: 140px;
       height: 195px;
-      left: 415px;
+      left: 421px;
       top: 80px;
     }
   }
@@ -133,8 +139,8 @@
     &::before {
       width: 268px;
       height: 113px;
-      left: 350px;
-      top: 130px;
+      left: 358px;
+      top: 132px;
     }
   }
 
@@ -153,6 +159,21 @@
     width: 120px;
     margin-left: 35px;
     font-size: 20px;
+    padding-top: 42px;
+
+    &::after {
+      left: 130px;
+      top: 48px;
+    }
+  }
+
+  .food-categories__link:last-child {
+    padding-top: 65px;
+
+    &::after {
+      top: 73px;
+      left: 122px;
+    }
   }
 }
 

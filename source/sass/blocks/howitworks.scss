@@ -60,6 +60,10 @@
 }
 
 @media (min-width: 768px) {
+  .howitworks {
+    width: 768px;
+  }
+
   .howitworks__list {
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +98,7 @@
       width: 70px;
       height: 230px;
       top: -110px;
-      right: 0;
+      right: 12px;
     }
 
     &--healthy::after {
@@ -119,8 +123,15 @@
   }
 
   .howitworks__paragraph {
+    width: 235px;
     padding-top: 90px;
     padding-left: 0;
+    margin-left: 0;
+    margin-top: 22px;
+  }
+
+  .howitworks__header {
+    margin-bottom: 73px;
   }
 }
 
