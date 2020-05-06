@@ -114,7 +114,11 @@
 
 @media (min-width: 1200px) {
   .order-over__wrapper {
-    width: auto;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 154px;
   }
 
   .order-over__label {

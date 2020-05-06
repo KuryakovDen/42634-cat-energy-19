@@ -233,13 +233,24 @@
 
 @media (min-width: 1200px) {
   .catalog {
-    width: 1200px;
+    width: 1440px;
+    margin: auto;
+    padding-left: 145px;
   }
 
   .catalog__card {
     box-sizing: border-box;
     width: 245px;
     height: 430px;
+    margin-right: 50px;
+
+    &:nth-child(2n) {
+      margin-right: 50px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
   }
 
   .catalog__wrapper {
@@ -257,6 +268,9 @@
   }
 
   .catalog__image {
+    left: 45px;
+    bottom: 310px;
+
     &--fish500 {
       width: 163px;
       height: 174px;

@@ -85,6 +85,7 @@
 
 @media (min-width: 1200px) {
   .cat-info {
+    width: 700px;
     padding: 0;
   }
 
@@ -94,12 +95,15 @@
   }
 
   .cat-info__container {
-    margin-right: 80px;
+    min-width: auto;
+    margin-left: 100px;
   }
 
   .cat-info__input {
+    margin-left: 0;
+
     &--name {
-      width: 505px;
+      width: 502px;
     }
 
     &--weight {
@@ -114,5 +118,9 @@
       color: black;
       font-size: 20px;
     }
+  }
+
+  .cat-info__wrapper {
+    width: 600px;
   }
 }

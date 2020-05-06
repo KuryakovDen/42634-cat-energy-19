@@ -93,6 +93,8 @@
   .order-contacts__wrapper {
     display: flex;
     flex-direction: row;
+    margin-left: 150px;
+    padding-top: 20px;
   }
 
   .order-contacts__label {
@@ -101,6 +103,8 @@
 
   .order-contacts__input {
     box-sizing: border-box;
+    min-height: 52px;
+    margin-left: 0;
 
     &--email {
       width: 485px;

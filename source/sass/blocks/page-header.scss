@@ -166,24 +166,39 @@
 
 @media (min-width: 1200px) {
   .page-header {
-    width: 1100px;
+    width: 1200px;
     box-sizing: border-box;
+  }
+
+  .page-header__list {
+    width: 500px;
+    margin-left: 108px;
+  }
+
+  .page-header__item {
+    padding-top: 16px;
   }
 
   .page-header__navigation {
     z-index: 2;
-    width: 650px;
+    width: 470px;
   }
 
   .page-header__link {
     font-weight: normal;
+    font-size: 20px;
 
     &:hover {
       border-bottom: 2px solid #68b738;
+      padding-bottom: 6px;
+    }
+
+    &--active {
+      padding-bottom: 6px;
     }
 
     &--main-active {
-      padding-bottom: 8px;
+      padding-bottom: 6px;
       border-bottom: 2px solid white;
     }
   }
@@ -203,5 +218,6 @@
   .page-header__image {
     width: 203px;
     height: 60px;
+    margin-left: 50px;
   }
 }

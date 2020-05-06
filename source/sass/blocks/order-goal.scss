@@ -98,8 +98,13 @@
 
 @media (min-width: 1200px) {
   .order-goal {
+    display: block;
     width: 570px;
     height: 195px;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-top: -68px;
+    margin-left: 45px;
   }
 }
