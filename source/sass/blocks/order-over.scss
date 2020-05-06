@@ -74,11 +74,17 @@
 
 
 @media (min-width: 768px) {
+  .order-over {
+    margin-bottom: 5px;
+  }
+
   .order-over__wrapper {
+    min-height: 140px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    margin-left: 53px;
   }
 
   .order-over__label {
@@ -93,11 +99,26 @@
       margin-right: 0;
     }
   }
+
+  .order-over__span {
+    margin-left: 62px;
+  }
+
+  .order-over__label input[type="checkbox"] + .order-over__indicator {
+    display: block;
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+  }
 }
 
 @media (min-width: 1200px) {
   .order-over__wrapper {
-    width: auto;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 154px;
   }
 
   .order-over__label {

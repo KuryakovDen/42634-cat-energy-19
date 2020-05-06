@@ -45,7 +45,7 @@
 @media (min-width: 768px) {
   .cooperation {
     min-height: 200px;
-    width: 720px;
+    width: 768px;
     justify-content: space-between;
     flex-wrap: wrap;
 
@@ -56,7 +56,7 @@
 
   .cooperation__tagline {
     width: 150px;
-    margin-left: 70px;
+    margin-left: 50px;
     line-height: 1.25;
     font-size: 20px;
   }
@@ -64,12 +64,13 @@
   .cooperation__address {
     width: 165px;
     text-align: right;
-    margin-right: 70px;
+    margin-right: 0;
     font-size: 16px;
   }
 
   .cooperation__map {
-    width: 720px;
+    width: 768px;
+    height: 400px;
   }
 
   .cooperation__wrapper {
@@ -85,22 +86,28 @@
   .cooperation {
     position: absolute;
     z-index: 2;
-    width: 570px;
-    top: 100px;
+    width: 572px;
+    top: 108px;
     left: 110px;
+    padding-right: 87px;
+    padding-left: 25px;
 
     &--reverse {
       background-color: white;
     }
   }
 
+  .cooperation__address {
+    text-align: left;
+  }
+
   .cooperation__map {
-    width: 1100px;
+    width: 1440px;
   }
 
   .cooperation__wrapper {
     justify-content: space-between;
     padding-left: 110px;
-    padding-right: 110px;
+    padding-right: 103px;
   }
 }

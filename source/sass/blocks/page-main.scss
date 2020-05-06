@@ -96,17 +96,17 @@
 
 @media (min-width: 768px) {
   .page-main {
-    min-width: 710px;
-    margin-top: 70px;
+    min-width: 768px;
+    margin-top: 55px;
   }
 
   .page-main__description {
     position: relative;
     min-width: 410px;
-    margin-left: 80px;
+    margin-left: 117px;
     background-image: none;
     z-index: 2;
-    margin-top: 0;
+    margin-top: -25px;
   }
 
   .page-main__background {
@@ -118,8 +118,9 @@
 
     &--catalog {
       white-space: nowrap;
-      margin-bottom: 160px;
-      padding: 0;
+      margin-bottom: 165px;
+      padding-top: 0;
+      padding-left: 30px;
     }
 
     &--inversion {
@@ -127,10 +128,13 @@
       text-align: left;
       font-size: 60px;
       width: 435px;
+      margin-bottom: 52px;
     }
 
     &--select {
+      margin: 0;
       margin-bottom: 50px;
+      margin-left: 30px;
     }
   }
 
@@ -138,15 +142,17 @@
     color: black;
     text-align: left;
     font-size: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
   }
 
   .page-main__image {
     display: inline-block;
+    box-sizing: border-box;
     width: 710px;
     height: 610px;
-    padding-top: 50px;
-    padding-left: 60px;
+    padding-top: 80px;
+    padding-left: 115px;
+    margin-bottom: 60px;
     z-index: -1;
   }
 
@@ -154,13 +160,34 @@
     font-size: 20px;
     width: 330px;
     line-height: 1.5;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
+    margin-top: 58px;
+    margin-left: 70px;
+  }
+
+  .page-main__present {
+    height: 200px;
+    margin-top: 68px;
+    box-sizing: border-box;
+    margin-bottom: 75px;
+  }
+
+  .page-main__wrapper {
+    width: 768px;
+  }
+
+  .page-main__food-types {
+    margin-bottom: 45px;
+  }
+
+  .page-main__howitworks {
+    margin-left: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .page-main {
-    width: 1100px;
+    width: 1440px;
   }
 
   .page-main__image {
@@ -169,8 +196,8 @@
     height: 500px;
     padding: 0;
     margin: auto;
-    margin-left: 400px;
-    margin-top: -315px;
+    margin-left: 370px;
+    margin-top: -350px;
     box-sizing: border-box;
   }
 
@@ -178,13 +205,14 @@
     width: 410px;
     height: 300px;
     position: relative;
+    margin-top: 87px;
+    margin-left: -35px;
     z-index: 2;
   }
 
   .page-main__desctop-wrapper {
     width: 700px;
     height: 400px;
-    // display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     padding-top: 110px;
@@ -200,48 +228,59 @@
     background-size: 720px 696px;
   }
 
-  // .page-main__tagline {
-  //   display: block;
-  //   position: absolute;
-  //   left: -500px;
-  // }
-
   .page-main__header {
     text-align: left;
 
-    // &--inversion {
-    //   position: absolute;
-    //   margin-top: 135px;
-    //   left: -500px;
-    // }
-
     &--select {
-      margin: auto;
+      margin-top: 17px;
+      margin-left: 172px;
       margin-bottom: 50px;
+    }
+
+    &--catalog {
+      padding-top: 18px;
+      padding-left: 172px;
     }
   }
 
   .page-main__text {
-    margin-left: 0;
+    line-height: 1.5;
+    margin-left: 172px;
     margin-bottom: 70px;
   }
 
   .page-main__container {
-    width: 1220px;
+    width: 1320px;
     display: flex;
   }
 
   .page-main__wrapper {
     width: 1200px;
+
+    &--index {
+      margin: auto;
+    }
   }
 
   .page-main__desc-wrapper {
     width: 1440px;
     display: flex;
     flex-direction: row-reverse;
-    margin-top: -140px;
-    margin-left: -300px;
+    margin-top: -170px;
+    margin-left: 60px;
     margin-bottom: 80px;
     box-sizing: border-box;
+  }
+
+  .page-main__present {
+    box-sizing: border-box;
+    height: 290px;
+    width: 245px;
+    margin-top: 0;
+    margin-left: 95px;
+  }
+
+  .page-main__howitworks {
+    margin-left: 53px;
   }
 }

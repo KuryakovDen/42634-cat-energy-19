@@ -12,6 +12,7 @@
   padding: 0;
   margin-left: 5px;
   margin-right: 10px;
+  white-space: nowrap;
 }
 
 .cat-info__input {
@@ -21,6 +22,7 @@
   margin-bottom: 15px;
   font-family: "Oswald", "Helvetica", sans-serif;
   box-sizing: border-box;
+  min-height: 52px;
   padding-left: 15px;
 
   &--name {
@@ -38,8 +40,16 @@
 
 @media (min-width: 768px) {
   .cat-info__container {
+    min-width: 768px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
+    margin-left: 28px;
+    margin-top: -5px;
+  }
+
+  .cat-info__label {
+    font-size: 20px;
   }
 
   .cat-info__input {
@@ -47,15 +57,15 @@
     margin: auto;
 
     &--name {
-      width: 568px;
+      width: 573px;
     }
 
     &--weight {
-      width: 535px;
+      width: 545px;
     }
 
     &--age {
-      width: 500px;
+      width: 505px;
     }
 
     &::placeholder {
@@ -69,11 +79,13 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+    margin-left: 25px;
   }
 }
 
 @media (min-width: 1200px) {
   .cat-info {
+    width: 700px;
     padding: 0;
   }
 
@@ -83,12 +95,15 @@
   }
 
   .cat-info__container {
-    margin-right: 80px;
+    min-width: auto;
+    margin-left: 100px;
   }
 
   .cat-info__input {
+    margin-left: 0;
+
     &--name {
-      width: 505px;
+      width: 502px;
     }
 
     &--weight {
@@ -103,5 +118,9 @@
       color: black;
       font-size: 20px;
     }
+  }
+
+  .cat-info__wrapper {
+    width: 600px;
   }
 }
