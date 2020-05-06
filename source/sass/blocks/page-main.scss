@@ -196,8 +196,8 @@
     height: 500px;
     padding: 0;
     margin: auto;
-    margin-left: 400px;
-    margin-top: -315px;
+    margin-left: 370px;
+    margin-top: -350px;
     box-sizing: border-box;
   }
 
@@ -205,6 +205,8 @@
     width: 410px;
     height: 300px;
     position: relative;
+    margin-top: 87px;
+    margin-left: -35px;
     z-index: 2;
   }
 
@@ -254,14 +256,18 @@
 
   .page-main__wrapper {
     width: 1200px;
+
+    &--index {
+      margin: auto;
+    }
   }
 
   .page-main__desc-wrapper {
     width: 1440px;
     display: flex;
     flex-direction: row-reverse;
-    margin-top: -140px;
-    margin-left: -300px;
+    margin-top: -170px;
+    margin-left: 60px;
     margin-bottom: 80px;
     box-sizing: border-box;
   }
@@ -272,5 +278,9 @@
     width: 245px;
     margin-top: 0;
     margin-left: 95px;
+  }
+
+  .page-main__howitworks {
+    margin-left: 53px;
   }
 }

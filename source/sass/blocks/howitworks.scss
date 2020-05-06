@@ -136,19 +136,27 @@
 }
 
 @media (min-width: 1200px) {
+  .howitworks {
+    width: 1350px;
+  }
+
   .howitworks__list {
     width: 1200px;
   }
 
   .howitworks__item {
-    margin-right: 90px;
+    margin-right: 125px;
 
     &:nth-child(2n) {
-      margin-right: 90px;
+      margin-right: 125px;
     }
 
     &:nth-child(4n) {
       margin-right: 0;
     }
+  }
+
+  .howitworks__header {
+    margin-top: 75px;
   }
 }
