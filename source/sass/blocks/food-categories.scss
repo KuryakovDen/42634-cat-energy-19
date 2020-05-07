@@ -94,6 +94,13 @@
   }
 }
 
+.food-categories__link:hover::after {
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+  background-repeat: no-repeat;
+  width: 34px;
+  height: 12px;
+}
+
 .food-categories__wrapper {
   border-top: 1px solid lightgrey;
   margin-left: 20px;
