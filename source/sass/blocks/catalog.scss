@@ -148,42 +148,35 @@
   }
 
   .catalog__image {
+    width: 100%;
     position: absolute;
-    left: 75px;
     bottom: 175px;
 
     &--chicken500 {
-      width: 160px;
       height: 172px;
     }
 
     &--chicken1000 {
-      width: 195px;
       height: 208px;
     }
 
     &--fish500 {
-      width: 160px;
       height: 174px;
     }
 
     &--fish1000 {
-      width: 195px;
       height: 208px;
     }
 
     &--buckwheat500 {
-      width: 160px;
       height: 170px;
     }
 
     &--buckwheat1000 {
-      width: 195px;
       height: 208px;
     }
 
     &--rice500 {
-      width: 163px;
       height: 174px;
     }
   }
@@ -268,11 +261,9 @@
   }
 
   .catalog__image {
-    left: 45px;
     bottom: 310px;
 
     &--fish500 {
-      width: 163px;
       height: 174px;
     }
   }
