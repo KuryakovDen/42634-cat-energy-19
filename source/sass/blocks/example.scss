@@ -57,16 +57,28 @@
   background-color: white;
 }
 
-.example__button {
-  display: none;
-}
-
 .example__img {
   display: block;
   width: 311px;
   height: 235px;
   margin-left: 5px;
   padding: 0;
+}
+
+.example__button {
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.example__range-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.example__img--after {
+  display: none;
 }
 
 .example__scale {
@@ -140,15 +152,22 @@
 
 @media (min-width: 768px) {
   .example {
-    width: 720px;
+    width: 768px;
     border-top: 1px solid #cdcdcd;
+  }
+
+  .example__header {
+    margin-top: -606px;
+    margin-left: 10px;
+    margin-bottom: 65px;
   }
 
   .example__item {
     display: block;
+    box-sizing: border-box;
     width: 162px;
     height: 72px;
-    box-sizing: border-box;
+    font-size: 14px;
 
     &:first-child {
       margin-right: 40px;
@@ -161,7 +180,8 @@
     }
 
     &::before {
-      left: 23px;
+      left: 45px;
+      top: 62px;
     }
 
     &::after {
@@ -169,15 +189,33 @@
     }
   }
 
+  .example__item--weight {
+    &::before {
+      background-color: white;
+      left: 32px;
+    }
+  }
+
+  .example__item--days {
+    &::after {
+      background-color: white;
+      left: 19px;
+      top: 61px;
+    }
+  }
+
   .example__description {
     width: 674px;
     line-height: 1.5;
     font-size: 16px;
+    margin-left: 32px;
+    margin-top: 0;
   }
 
   .example__info {
     font-size: 30px;
     line-height: 1.23;
+    margin-top: 15px;
   }
 
   .example__cost {
@@ -185,10 +223,14 @@
     font-size: 20px;
     padding-right: 20px;
     text-align: right;
+    margin-right: -60px;
+    margin-top: 33px;
   }
 
   .example__result {
+    width: 365px;
     margin: 0;
+    margin-left: 32px;
   }
 
   .example__wrapper {
@@ -196,6 +238,45 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .example__slider {
+    width: 768px;
+  }
+
+  .example__range {
+    width: 428px;
+    height: 6px;
+  }
+
+  .example__button {
+    font-size: 20px;
+  }
+
+  .example__range-wrapper {
+    width: 600px;
+    margin: auto;
+  }
+
+  .example__slider-container {
+    display: flex;
+    min-height: 500px;
+  }
+
+  .example__img {
+    width: auto;
+    height: auto;
+  }
+
+  .example__img--before {
+    width: 750px;
+    height: 500px;
+  }
+
+  .example__img--after {
+    display: block;
+    // width: 298px;
+    // height: 517px;
   }
 }
 
