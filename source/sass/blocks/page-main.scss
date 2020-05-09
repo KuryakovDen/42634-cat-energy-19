@@ -9,8 +9,8 @@
   text-align: center;
   line-height: 1;
   margin: 0;
-  padding-top: 25px;
-  margin-bottom: 39px;
+  padding-top: 20px;
+  margin-bottom: 38px;
 
   &--inversion {
     color: white;
@@ -76,6 +76,10 @@
 .page-main__wrapper {
   width: 320px;
   margin-right: 20px;
+}
+
+.page-main__example {
+  margin-top: 45px;
 }
 
 .page-main__example-wrapper {
