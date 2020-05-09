@@ -1,8 +1,10 @@
 .order-goal {
   display: flex;
+  flex-direction: column;
   border: 1px solid lightgrey;
   box-sizing: border-box;
   height: 158px;
+  padding-top: 10px;
 }
 
 .order-goal__label {
@@ -52,10 +54,10 @@
 .order-goal__label input[type="radio"] ~ .order-goal__over-indicator {
   position: absolute;
   content: "";
-  top: 6px;
-  left: 14px;
-  width: 10px;
-  height: 10px;
+  top: 5px;
+  left: 13px;
+  width: 12px;
+  height: 12px;
   background-color: #68b738;
   border-radius: 50%;
 }
