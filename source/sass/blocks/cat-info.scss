@@ -48,7 +48,6 @@
     flex-direction: column;
     margin-bottom: 40px;
     margin-left: 28px;
-    margin-top: -5px;
   }
 
   .cat-info__label {
@@ -60,15 +59,21 @@
     margin: auto;
 
     &--name {
-      width: 573px;
+      width: 568px;
+      margin-top: 0;
+      margin-left: 7px;
     }
 
     &--weight {
-      width: 545px;
+      width: 540px;
+      margin-top: 0;
+      margin-left: 7px;
     }
 
     &--age {
-      width: 505px;
+      width: 498px;
+      margin-top: 0;
+      margin-left: 7px;
     }
 
     &::placeholder {
