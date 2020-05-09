@@ -15,18 +15,12 @@
   position: relative;
   color: white;
   box-sizing: border-box;
+}
 
-  &::before {
-    width: 55px;
-    height: 60px;
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    left: 110px;
-    top: 60px;
-  }
+.present__svg {
+  position: absolute;
+  top: 64px;
+  left: 114px;
 }
 
 .present__text {
