@@ -154,7 +154,7 @@
   }
 
   .example__header {
-    margin-top: -606px;
+    margin-top: -583px;
     margin-left: 10px;
     margin-bottom: 65px;
   }
@@ -228,7 +228,7 @@
     width: 600px;
     background-color: $grey;
     margin: auto;
-    margin-top: 40px;
+    margin-top: -7px;
   }
 
   .example__range {
@@ -259,7 +259,7 @@
     width: 34px;
     height: 34px;
     top: 33px;
-    left: 308px;
+    left: 302px;
     margin-top: -47px;
     margin-left: -17px;
     background-color: $white;
@@ -305,6 +305,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
 
   .example__slider {
@@ -330,7 +331,7 @@
   }
 
   .example__img--before {
-    margin-top: -170px;
+    margin-top: -148px;
     margin-left: 46px;
   }
 

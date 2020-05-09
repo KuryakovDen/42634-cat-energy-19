@@ -128,7 +128,7 @@
     &::after {
       width: 200px;
       height: 200px;
-      left: 390px;
+      left: 396px;
       top: 91px;
     }
   }
@@ -174,7 +174,16 @@
     }
   }
 
-  .food-categories__link:last-child {
+  .food-categories__link--slim {
+    padding-top: 40px;
+
+    &::after {
+      left: 130px;
+      top: 48px;
+    }
+  }
+
+  .food-categories__link--gain {
     padding-top: 65px;
 
     &::after {
