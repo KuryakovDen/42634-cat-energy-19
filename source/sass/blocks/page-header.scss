@@ -4,10 +4,12 @@
 }
 
 .page-header__logo-wrapper {
+  position: relative;
   width: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 2;
 }
 
 .page-header__logo {
@@ -24,8 +26,9 @@
 
 .page-header__image {
   width: 190px;
-  min-height: 65px;
   margin: 0;
+  margin-top: 12px;
+  margin-bottom: 14px;
   padding: 0;
 }
 
@@ -38,18 +41,19 @@
     background-color: white;
     background-repeat: no-repeat;
     border: none;
-    margin-left: 70px;
+    margin-left: 69px;
+    margin-top: -6px;
     cursor: pointer;
   }
 
   &--closed {
     display: block;
-    width: 19px;
+    width: 22px;
     height: 19px;
     background-color: white;
     background-repeat: no-repeat;
     border: none;
-    margin-left: 70px;
+    margin-left: 65px;
     cursor: pointer;
     background-image: url("../img/icon-mobile-menu.svg");
   }
@@ -127,6 +131,10 @@
     border: none;
   }
 
+  .page-header__navigation {
+    margin-top: 6px;
+  }
+
   .page-header__item {
     border: none;
     margin-bottom: 0;
@@ -182,6 +190,7 @@
   .page-header__navigation {
     z-index: 2;
     width: 470px;
+    margin-top: 8px;
   }
 
   .page-header__link {

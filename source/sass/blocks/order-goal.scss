@@ -1,8 +1,10 @@
 .order-goal {
   display: flex;
+  flex-direction: column;
   border: 1px solid lightgrey;
   box-sizing: border-box;
   height: 158px;
+  padding-top: 10px;
 }
 
 .order-goal__label {
@@ -52,10 +54,10 @@
 .order-goal__label input[type="radio"] ~ .order-goal__over-indicator {
   position: absolute;
   content: "";
-  top: 6px;
-  left: 14px;
-  width: 10px;
-  height: 10px;
+  top: 5px;
+  left: 13px;
+  width: 12px;
+  height: 12px;
   background-color: #68b738;
   border-radius: 50%;
 }
@@ -90,18 +92,24 @@
 
   .order-goal__label {
     display: block;
-    margin-left: 9px;
-    margin-top: 10px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 22px;
+
+    &:first-child {
+      margin-top: 21px;
+    }
   }
 
   .order-goal__label input[type="radio"] ~ .order-goal__over-indicator {
-    top: 7px;
-    left: 15px;
+    top: 6px;
+    left: 14px;
     width: 18px;
     height: 18px;
   }
 
   .order-goal__label input[type="radio"] + .order-goal__indicator {
+    box-sizing: border-box;
     width: 40px;
     height: 40px;
   }
@@ -119,7 +127,29 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    margin-top: -68px;
+    margin-top: -59px;
     margin-left: 45px;
+  }
+
+  .order-goal__label {
+    &:first-child {
+      margin-top: 30px;
+    }
+  }
+
+  .order-goal__label input[type="radio"]:checked + .order-goal__indicator,
+  .order-goal__label input[type="radio"]:not(:checked) + .order-goal__indicator {
+    left: 9px;
+    top: -6px;
+  }
+
+  .order-goal__label input[type="radio"] ~ .order-goal__over-indicator {
+    top: 5px;
+    left: 20px;
+  }
+
+  .order-goal__span {
+    margin-left: 70px;
+    padding-bottom: 10px;
   }
 }

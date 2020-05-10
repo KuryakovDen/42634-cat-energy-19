@@ -11,23 +11,25 @@
   line-height: 40px;
   border: none;
   font-family: "Oswald", "Helvetica", sans-serif;
+  white-space: nowrap;
 
   &--small {
     position: relative;
     font-size: 14px;
     z-index: 2;
     margin: auto;
-    margin-top: 300px;
+    margin-top: 297px;
   }
 
   &--catalog {
     margin: auto;
-    margin-top: 0;
+    margin-top: -5px;
     margin-bottom: 25px;
   }
 
   &--send {
-    margin-top: 15px;
+    margin-top: 7px;
+    margin-left: 24px;
   }
 
   &:hover {
@@ -69,6 +71,7 @@
       z-index: 2;
       margin-top: 0;
       margin-left: 0;
+      white-space: nowrap;
     }
 
     &--catalog {

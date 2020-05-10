@@ -18,7 +18,24 @@
   }
 }
 
+.order-contacts__icon {
+  position: absolute;
+  left: 50px;
+  top: 10px;
+
+  &--mail {
+    left: 252px;
+    top: 21px;
+  }
+
+  &--phone {
+    left: 252px;
+    top: 17px;
+  }
+}
+
 .order-contacts__container {
+  position: relative;
   height: 45px;
 
   &:first-child {
@@ -69,6 +86,18 @@
     }
   }
 
+  .order-contacts__icon {
+    &--mail {
+      left: 601px;
+      top: 19px;
+    }
+
+    &--phone {
+      left: 601px;
+      top: 12px;
+    }
+  }
+
   .order-contacts__input {
     min-height: 45px;
     margin: auto;
@@ -99,10 +128,15 @@
 
   .order-contacts__label {
     white-space: nowrap;
+
+    &:first-child {
+      margin-right: 24px;
+    }
   }
 
   .order-contacts__input {
     box-sizing: border-box;
+    min-width: 470px;
     min-height: 52px;
     margin-left: 0;
 
@@ -112,6 +146,17 @@
 
     &--phone {
       width: 470px;
+    }
+  }
+
+  .order-contacts__icon {
+    &--mail {
+      left: 541px;
+    }
+
+    &--phone {
+      left: 545px;
+      top: 15px;
     }
   }
 }

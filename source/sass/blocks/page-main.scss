@@ -9,8 +9,8 @@
   text-align: center;
   line-height: 1;
   margin: 0;
-  padding-top: 25px;
-  margin-bottom: 39px;
+  padding-top: 20px;
+  margin-bottom: 38px;
 
   &--inversion {
     color: white;
@@ -28,6 +28,7 @@
   &--catalog {
     text-align: left;
     padding-left: 22px;
+    padding-top: 26px;
   }
 }
 
@@ -78,6 +79,10 @@
   margin-right: 20px;
 }
 
+.page-main__example {
+  margin-top: 45px;
+}
+
 .page-main__example-wrapper {
   width: 320px;
   margin-right: 20px;
@@ -94,14 +99,14 @@
 
 .page-main__present {
   margin: auto;
-  margin-top: 40px;
+  margin-top: 36px;
   margin-bottom: 35px;
 }
 
 @media (min-width: 768px) {
   .page-main {
     min-width: 768px;
-    margin-top: 55px;
+    margin-top: 45px;
   }
 
   .page-main__description {
@@ -154,10 +159,10 @@
     box-sizing: border-box;
     width: 710px;
     height: 610px;
-    padding-top: 80px;
-    padding-left: 115px;
-    margin-bottom: 60px;
+    margin-bottom: -5px;
     z-index: -1;
+    margin-left: 27px;
+    margin-top: -81px;
   }
 
   .page-main__text {
@@ -165,8 +170,8 @@
     width: 330px;
     line-height: 1.5;
     margin-bottom: 60px;
-    margin-top: 58px;
-    margin-left: 70px;
+    margin-top: 54px;
+    margin-left: 73px;
   }
 
   .page-main__present {
@@ -178,6 +183,17 @@
 
   .page-main__wrapper {
     width: 768px;
+    margin-bottom: 613px;
+
+    &--catalog {
+      margin-bottom: 0;
+    }
+  }
+
+  .page-main__example-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 768px;
   }
 
   .page-main__food-types {
@@ -197,11 +213,12 @@
   .page-main__image {
     z-index: 2;
     width: 552px;
+    max-width: none;
     height: 500px;
     padding: 0;
     margin: auto;
-    margin-left: 370px;
-    margin-top: -350px;
+    margin-left: 333px;
+    margin-top: -360px;
     box-sizing: border-box;
   }
 
@@ -246,7 +263,7 @@
     }
 
     &--catalog {
-      padding-top: 18px;
+      padding-top: 15px;
       padding-left: 172px;
     }
   }
@@ -254,19 +271,28 @@
   .page-main__text {
     line-height: 1.5;
     margin-left: 172px;
-    margin-bottom: 70px;
+    margin-bottom: 63px;
   }
 
   .page-main__container {
     width: 1320px;
     display: flex;
+
+    &--catalog {
+      width: 1440px;
+    }
+  }
+
+  .page-main__example-wrapper {
+    flex-direction: row;
   }
 
   .page-main__wrapper {
     width: 1200px;
+    margin-bottom: 168px;
 
-    &--index {
-      margin: auto;
+    &--catalog {
+      margin-bottom: 0;
     }
   }
 
@@ -280,15 +306,24 @@
     box-sizing: border-box;
   }
 
+  .page-main__example-container {
+    width: 600px;
+  }
+
   .page-main__present {
     box-sizing: border-box;
     height: 290px;
     width: 245px;
     margin-top: 0;
-    margin-left: -125px;
+    margin-left: -52px;
+    margin-bottom: 87px;
   }
 
   .page-main__howitworks {
-    margin-left: 53px;
+    margin-left: 170px;
+  }
+
+  .page-main__tagline {
+    margin-bottom: 47px;
   }
 }
