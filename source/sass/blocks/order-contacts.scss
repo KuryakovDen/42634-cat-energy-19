@@ -128,10 +128,15 @@
 
   .order-contacts__label {
     white-space: nowrap;
+
+    &:first-child {
+      margin-right: 24px;
+    }
   }
 
   .order-contacts__input {
     box-sizing: border-box;
+    min-width: 470px;
     min-height: 52px;
     margin-left: 0;
 
@@ -141,6 +146,17 @@
 
     &--phone {
       width: 470px;
+    }
+  }
+
+  .order-contacts__icon {
+    &--mail {
+      left: 541px;
+    }
+
+    &--phone {
+      left: 545px;
+      top: 15px;
     }
   }
 }

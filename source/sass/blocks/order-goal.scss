@@ -127,7 +127,29 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    margin-top: -68px;
+    margin-top: -59px;
     margin-left: 45px;
+  }
+
+  .order-goal__label {
+    &:first-child {
+      margin-top: 30px;
+    }
+  }
+
+  .order-goal__label input[type="radio"]:checked + .order-goal__indicator,
+  .order-goal__label input[type="radio"]:not(:checked) + .order-goal__indicator {
+    left: 9px;
+    top: -6px;
+  }
+
+  .order-goal__label input[type="radio"] ~ .order-goal__over-indicator {
+    top: 5px;
+    left: 20px;
+  }
+
+  .order-goal__span {
+    margin-left: 70px;
+    padding-bottom: 10px;
   }
 }
