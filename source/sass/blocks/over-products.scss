@@ -64,6 +64,14 @@
     width: 230px;
     margin-left: 60px;
     margin-top: 18px;
+
+    &--water {
+      margin-left: 343px;
+    }
+
+    &--milk {
+      margin-left: 415px;
+    }
   }
 
   .over-products__link {
@@ -74,7 +82,7 @@
   .over-products__title {
     font-size: 20px;
     white-space: nowrap;
-    padding-left: 40px;
+    padding-left: 34px;
   }
 
   .over-products__tr {
@@ -84,6 +92,14 @@
     align-items: center;
     font-size: 16px;
     margin: 0;
+
+    &--water {
+      width: 160px;
+    }
+
+    &--milk {
+      width: 150px;
+    }
 
     &:nth-child(2) {
       width: 20px;

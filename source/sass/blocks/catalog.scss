@@ -105,6 +105,7 @@
     width: 130px;
     font-size: 20px;
     text-align: center;
+    margin-top: 10px;
 
     &--more {
       width: 140px;
@@ -153,14 +154,20 @@
     flex-direction: column;
     justify-content: center;
     margin: auto;
+
+    &--more {
+      margin-top: -47px;
+    }
   }
 
   .catalog__image {
-    width: 100%;
+    width: 315px;
     position: absolute;
-    bottom: 175px;
+    bottom: 200px;
 
     &--chicken500 {
+      left: 2px;
+      width: 340px;
       height: 172px;
     }
 
@@ -199,6 +206,7 @@
   }
 
   .catalog__wrapper {
+    width: 320px;
     position: relative;
     margin-top: 30px;
 
@@ -221,7 +229,7 @@
     justify-content: space-between;
     font-size: 16px;
     padding-bottom: 5px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #cdcdcd;
     margin-bottom: 5px;
   }
 
@@ -229,6 +237,15 @@
     width: 175px;
     font-size: 16px;
     text-align: center;
+    margin-top: 0;
+  }
+
+  .catalog__icon {
+    opacity: 0.2;
+    left: 54px;
+    top: -92px;
+    width: 61px;
+    height: 61px;
   }
 }
 
