@@ -350,7 +350,7 @@
   }
 
   .example__header {
-    margin-top: -163px;
+    margin-top: -159px;
     margin-left: 90px;
     margin-bottom: 145px;
   }
@@ -369,6 +369,13 @@
 
   .example__img {
     margin-left: 34px;
+    margin-bottom: 54px;
+  }
+
+  .example__span-cost {
+    white-space: nowrap;
+    margin-left: 58px;
+    margin-right: -53px;
   }
 
   .example__img--before {
@@ -390,7 +397,7 @@
 
   .example__cost {
     width: 285px;
-    margin-top: 55px;
+    margin-top: 60px;
     margin-left: -266px;
     padding: 0;
     padding-right: 10px;
@@ -407,5 +414,9 @@
 
   .example__range-wrapper {
     margin-top: 34px;
+  }
+
+  .example__status {
+    margin-top: 15px;
   }
 }
