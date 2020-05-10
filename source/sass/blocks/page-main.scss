@@ -263,7 +263,7 @@
     }
 
     &--catalog {
-      padding-top: 18px;
+      padding-top: 15px;
       padding-left: 172px;
     }
   }
@@ -277,6 +277,10 @@
   .page-main__container {
     width: 1320px;
     display: flex;
+
+    &--catalog {
+      width: 1440px;
+    }
   }
 
   .page-main__example-wrapper {
@@ -286,6 +290,10 @@
   .page-main__wrapper {
     width: 1200px;
     margin-bottom: 168px;
+
+    &--catalog {
+      margin-bottom: 0;
+    }
   }
 
   .page-main__desc-wrapper {
@@ -307,7 +315,8 @@
     height: 290px;
     width: 245px;
     margin-top: 0;
-    margin-left: -125px;
+    margin-left: -52px;
+    margin-bottom: 87px;
   }
 
   .page-main__howitworks {

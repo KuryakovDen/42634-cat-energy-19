@@ -136,8 +136,20 @@
     padding: 0;
   }
 
+  .over-products__table {
+    &--water,
+    &--milk {
+      margin-left: auto;
+    }
+  }
+
   .over-products__tr {
     width: 280px;
+
+    &--water,
+    &--milk {
+      width: 280px;
+    }
   }
 
   .over-products__link {
@@ -151,7 +163,7 @@
 
   .over-products__list {
     width: 900px;
-    margin-left: 50px;
+    margin-left: 111px;
     margin-right: 40px;
   }
 
