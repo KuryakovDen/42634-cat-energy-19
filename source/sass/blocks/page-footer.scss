@@ -27,6 +27,16 @@
   padding-right: 80px;
 }
 
+.page-footer__logo-link {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .page-footer__item {
   list-style: none;
 }
@@ -81,6 +91,14 @@
     &--fb {
       width: 14px;
       height: 28px;
+    }
+
+    &:hover {
+      fill: #68b738;
+    }
+
+    &:active {
+      opacity: 0.3;
     }
   }
 }
