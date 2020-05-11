@@ -36,6 +36,12 @@
 }
 
 .section-title--orders {
+  display: block;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  margin-top: 27px;
+  font-size: 22px;
+
   &::after {
     width: 53px;
     left: 249px;
