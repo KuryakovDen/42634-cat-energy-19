@@ -4,6 +4,7 @@ var gulp = require("gulp");
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
 
 var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
@@ -26,6 +27,16 @@ gulp.task("css", function () {
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });
+
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  .pipe(imagemin([
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.mozjpeg({progressive: true}),
+    imagemin.svgo()
+  ]))
+  .pipe(gulp.dest("source/css"))
+})
 
 gulp.task("server", function () {
   server.init({
