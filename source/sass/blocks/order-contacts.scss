@@ -10,11 +10,11 @@
   padding-left: 15px;
 
   &--email {
-    width: 200px;
+    width: 190px;
   }
 
   &--phone {
-    width: 184px;
+    width: 168px;
   }
 }
 
@@ -31,6 +31,14 @@
   &--phone {
     left: 252px;
     top: 17px;
+  }
+
+  &:active {
+    fill: #68b738;
+  }
+
+  &:invalid {
+    fill: #ff8282;
   }
 }
 
@@ -120,6 +128,7 @@
 
 @media (min-width: 1200px) {
   .order-contacts__wrapper {
+    width: 1200px;
     display: flex;
     flex-direction: row;
     margin-left: 150px;

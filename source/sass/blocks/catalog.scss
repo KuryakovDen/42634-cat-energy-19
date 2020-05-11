@@ -258,6 +258,14 @@
 
   .catalog__header {
     margin-top: 15px;
+
+    &--more {
+      margin-bottom: 20px;
+    }
+  }
+
+  .catalog__header-tagline {
+    height: 5px;
   }
 
   .catalog__info {
@@ -266,6 +274,7 @@
     &--more {
       margin-top: 114px;
       margin-left: 39px;
+      height: 100px;
     }
   }
 
