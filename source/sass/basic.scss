@@ -22,6 +22,9 @@ body {
   font-family: "Oswald", "Arial", sans-serif;
   max-width: 1200px;
   margin: auto;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 img {
