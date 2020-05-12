@@ -52,22 +52,3 @@ img {
   max-width: 100%;
   height: auto;
 }
-
-input {
-  opacity: 0.5;
-  border: solid 1px #cdcdcd;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:active {
-    border: solid 2px #444444;
-    opacity: 1;
-  }
-
-  &:invalid {
-    border: solid 2px #ff8282;
-    opacity: 1;
-  }
-}
