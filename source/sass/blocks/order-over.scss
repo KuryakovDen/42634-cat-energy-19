@@ -18,6 +18,10 @@
   &:first-child {
     margin-top: 25px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .order-over__input {
@@ -51,6 +55,14 @@
   background-position: center;
   background-repeat: no-repeat;
   border: 1px solid #cdcdcd;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .order-over__label input[type="checkbox"]:checked + .order-over__indicator {
@@ -106,6 +118,10 @@
   .order-over__span {
     margin-left: 62px;
     white-space: nowrap;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .order-over__label input[type="checkbox"] + .order-over__indicator {

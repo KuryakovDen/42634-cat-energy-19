@@ -242,10 +242,21 @@
     line-height: 1;
     margin-top: -10px;
     padding-bottom: 6px;
-    border-bottom: 1px dotted $greybrown;
+    border-bottom: 1px dotted grey;
 
     &--before {
+      border-bottom: 1px dotted grey;
       margin-right: 25px;
+    }
+
+    &:hover {
+      border-bottom: 1px dotted black;
+      cursor: pointer;
+    }
+
+    &:active {
+      border-bottom: none;
+      cursor: pointer;
     }
   }
 
@@ -276,6 +287,20 @@
       left: 12px;
       background-color: $green-button;
       border-radius: 50%;
+    }
+
+    &:hover {
+      box-shadow: 0px 3px 5px 0 rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+  }
+
+  .example__button:active {
+    border: 2px solid #68b738;
+
+    &::after {
+      left: 11px;
+      top: 11px;
     }
   }
 
