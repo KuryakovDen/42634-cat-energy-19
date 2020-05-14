@@ -20,3 +20,9 @@ toggleButton.addEventListener('click', function () {
     menu.classList.remove('page-header__navigation--closed');
   }
 });
+
+const staticMap = document.querySelector('.cooperation__map');
+staticMap.classList.add('visually-hidden');
+
+const interactiveMap = document.querySelector('.page-footer__map');
+interactiveMap.classList.remove('visually-hidden');
