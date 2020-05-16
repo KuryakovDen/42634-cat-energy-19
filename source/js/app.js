@@ -27,7 +27,7 @@ staticMap.classList.add('visually-hidden');
 const interactiveMap = document.querySelector('.page-footer__map');
 interactiveMap.classList.remove('visually-hidden');
 
-const orderButtons = document.querySelectorAll('.order-link');
+const orderButtons = document.querySelectorAll('.catalog__link');
 orderButtons.forEach((btn) => {
   btn.addEventListener('click', (evt) => {
     evt.preventDefault();
