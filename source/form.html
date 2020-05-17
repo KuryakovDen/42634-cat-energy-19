@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/basic.min.css" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
     <script>
       document.createElement("picture");
@@ -66,9 +67,9 @@
             <img class="page-header__image" src="img/logo-mobile.svg" alt="Изображение логотипа">
           </picture>
         </a>
-        <button class="page-header__toogle page-header__toogle--closed page-header__toogle--no-js"></button>
+        <button class="page-header__toggle page-header__toggle--closed page-header__toggle--no-js"></button>
       </div>
-      <nav class="page-header__navigation page-header__navigation--closed">
+      <nav class="page-header__navigation page-header__navigation--opened">
         <ul class="page-header__list">
           <li class="page-header__item">
             <a class="page-header__link" href="index.html">Главная</a>
@@ -115,19 +116,19 @@
           <fieldset class="order-form__fieldset order-goal">
             <label class="order-goal__label">
               <input class="order-goal__input" type="radio" name="order-goal__radio" value="slim" checked="">
-              <span class="order-goal__indicator"></span>
+              <span class="order-goal__indicator" tabindex="0"></span>
               <span class="order-goal__over-indicator"></span>
               <span class="order-goal__span order-form__text">Похудение</span>
             </label>
             <label class="order-goal__label">
               <input class="order-goal__input" type="radio" name="order-goal__radio" value="weight">
-              <span class="order-goal__indicator"></span>
+              <span class="order-goal__indicator" tabindex="0"></span>
               <span class="order-goal__over-indicator"></span>
               <span class="order-goal__span order-form__text">Набор массы</span>
             </label>
             <label class="order-goal__label">
               <input class="order-goal__input" type="radio" name="order-goal__radio" value="idontknow">
-              <span class="order-goal__indicator"></span>
+              <span class="order-goal__indicator" tabindex="0"></span>
               <span class="order-goal__over-indicator"></span>
               <span class="order-goal__span order-form__text">Не знаю (Нужен ваш совет)</span>
             </label>
@@ -206,14 +207,15 @@
         <b class="cooperation__tagline">приглашаем к сотрудничеству дилеров!</b>
         <address class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </section>
+      <iframe class="page-footer__map visually-hidden" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424124007!2d30.320894616135686!3d59.93879686904788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1561268887204!5m2!1sru!2sru" width="320" height="400" style="border:0" allowfullscreen></iframe>
       <picture>
         <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
         <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
         <img class="cooperation__map" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Картинка карты">
       </picture>
       <div class="cooperation__wrapper">
-        <a class="page-footer__logo-link" href="index.html">
-          <img class="page-footer__logo-image" src="img/logo-footer.svg" alt="Картинка логотипа">
+        <a class="page-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+          <img class="page-footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Картинка логотипа">
         </a>
         <nav class="page-footer__navigation">
           <ul class="page-footer__list">
@@ -242,7 +244,7 @@
         </nav>
         <div class="page-footer__info info-block">
           <p class="info-block__paragraph">HTML Academy</p>
-          <a class="info-block__link" href="https://htmlacademy.ru" target="_blank" aria-label="htmlacademy-logo">
+          <a class="info-block__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="htmlacademy-logo">
             <svg class="info-block__image" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
               <use xlink:href="#htmlacademy"></use>
             </svg>
@@ -250,27 +252,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      const toogleButton = document.querySelector('.page-header__toogle');
-      const menu = document.querySelector('.page-header__navigation');
-
-      toogleButton.classList.remove('page-header__toogle--no-js');
-
-      toogleButton.addEventListener('click', function () {
-        if (toogleButton.classList.contains('page-header__toogle--opened')) {
-          toogleButton.classList.remove('page-header__toogle--opened');
-          toogleButton.classList.add('page-header__toogle--closed');
-
-          menu.classList.add('page-header__navigation--closed');
-          menu.classList.remove('page-header__navigation--opened');
-        } else {
-          toogleButton.classList.add('page-header__toogle--opened');
-          toogleButton.classList.remove('page-header__toogle--closed');
-
-          menu.classList.add('page-header__navigation--opened');
-          menu.classList.remove('page-header__navigation--closed');
-        }
-      });
-    </script>
+    <script src="js/app.js"></script>
   </body>
 </html>

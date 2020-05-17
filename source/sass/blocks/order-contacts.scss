@@ -16,6 +16,20 @@
   &--phone {
     width: 168px;
   }
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    border: solid 2px #444444;
+    opacity: 1;
+  }
+
+  &:invalid {
+    border: solid 2px #ff8282;
+    opacity: 1;
+  }
 }
 
 .order-contacts__icon {

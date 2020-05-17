@@ -47,8 +47,6 @@
 
 .page-footer__logo-image {
   display: block;
-  width: 128px;
-  height: 24px;
   margin: 0 auto;
   margin-top: 33px;
 }
@@ -101,6 +99,11 @@
       opacity: 0.3;
     }
   }
+
+  .page-footer__map {
+    width: 768px;
+    height: 400px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -112,5 +115,10 @@
     &--disabled {
       margin-top: -15px;
     }
+  }
+
+  .page-footer__map {
+    width: 1440px;
+    height: 400px;
   }
 }

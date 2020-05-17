@@ -92,6 +92,10 @@
     left: 97px;
     top: 34px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .food-categories__link:hover::after {
